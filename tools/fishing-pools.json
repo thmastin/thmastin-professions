@@ -1,0 +1,958 @@
+{
+	"source": "CMaNGOS classic-db (22b51464f162), AreaTable 1.60.1.70938",
+	"areas": {
+		"1": {
+			"name": "Dun Morogh",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.588
+			}
+		},
+		"2": {
+			"name": "Longshore",
+			"parent": 40,
+			"fish": {
+				"mackerel": 0.335,
+				"albacore": 0.5
+			}
+		},
+		"8": {
+			"name": "Swamp of Sorrows",
+			"parent": 0,
+			"fish": {
+				"catfish": 0.4,
+				"trout": 0.584
+			}
+		},
+		"10": {
+			"name": "Duskwood",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.35,
+				"catfish": 0.634
+			}
+		},
+		"11": {
+			"name": "Wetlands",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.35,
+				"catfish": 0.634
+			}
+		},
+		"12": {
+			"name": "Elwynn Forest",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.588
+			}
+		},
+		"14": {
+			"name": "Durotar",
+			"parent": 0,
+			"fish": {
+				"mackerel": 0.98
+			}
+		},
+		"15": {
+			"name": "Dustwallow Marsh",
+			"parent": 0,
+			"fish": {
+				"catfish": 0.4,
+				"trout": 0.584
+			}
+		},
+		"16": {
+			"name": "Azshara",
+			"parent": 0,
+			"fish": {
+				"trout": 0.1,
+				"redgill": 0.354
+			}
+		},
+		"17": {
+			"name": "The Barrens",
+			"parent": 0,
+			"fish": {
+				"mackerel": 0.335,
+				"albacore": 0.5
+			}
+		},
+		"28": {
+			"name": "Western Plaguelands",
+			"parent": 0,
+			"fish": {
+				"trout": 0.1,
+				"redgill": 0.354
+			}
+		},
+		"33": {
+			"name": "Stranglethorn Vale",
+			"parent": 0,
+			"fish": {
+				"catfish": 0.4,
+				"trout": 0.584
+			}
+		},
+		"35": {
+			"name": "Booty Bay",
+			"parent": 33,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"36": {
+			"name": "Alterac Mountains",
+			"parent": 0,
+			"fish": {
+				"catfish": 0.4,
+				"trout": 0.584
+			}
+		},
+		"40": {
+			"name": "Westfall",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"43": {
+			"name": "Wild Shore",
+			"parent": 33,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"44": {
+			"name": "Redridge Mountains",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.35,
+				"catfish": 0.634
+			}
+		},
+		"45": {
+			"name": "Arathi Highlands",
+			"parent": 0,
+			"fish": {
+				"catfish": 0.4,
+				"trout": 0.584
+			}
+		},
+		"46": {
+			"name": "Burning Steppes",
+			"parent": 0,
+			"fish": {
+				"redgill": 0.05
+			}
+		},
+		"47": {
+			"name": "The Hinterlands",
+			"parent": 0,
+			"fish": {
+				"trout": 0.1,
+				"redgill": 0.354
+			}
+		},
+		"85": {
+			"name": "Tirisfal Glades",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.3
+			},
+			"incomplete": 0.55
+		},
+		"104": {
+			"name": "The Vile Reef",
+			"parent": 33,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"115": {
+			"name": "Westfall Lighthouse",
+			"parent": 40,
+			"fish": {
+				"mackerel": 0.335,
+				"albacore": 0.5
+			}
+		},
+		"117": {
+			"name": "Grom'gol Base Camp",
+			"parent": 33,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"122": {
+			"name": "Zuuldaia Ruins",
+			"parent": 33,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"130": {
+			"name": "Silverpine Forest",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.3
+			},
+			"incomplete": 0.55
+		},
+		"139": {
+			"name": "Eastern Plaguelands",
+			"parent": 0,
+			"fish": {
+				"redgill": 0.05
+			}
+		},
+		"141": {
+			"name": "Teldrassil",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.588
+			}
+		},
+		"148": {
+			"name": "Darkshore",
+			"parent": 0,
+			"fish": {
+				"mackerel": 0.185,
+				"albacore": 0.3
+			}
+		},
+		"150": {
+			"name": "Menethil Harbor",
+			"parent": 11,
+			"fish": {
+				"albacore": 0.588
+			}
+		},
+		"168": {
+			"name": "The North Coast",
+			"parent": 85,
+			"fish": {
+				"mackerel": 0.98
+			}
+		},
+		"169": {
+			"name": "Whispering Shore",
+			"parent": 85,
+			"fish": {
+				"mackerel": 0.98
+			}
+		},
+		"215": {
+			"name": "Mulgore",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.588
+			}
+		},
+		"226": {
+			"name": "The Skittering Dark",
+			"parent": 130,
+			"fish": {
+				"mackerel": 0.335,
+				"albacore": 0.5
+			}
+		},
+		"267": {
+			"name": "Hillsbrad Foothills",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.35,
+				"catfish": 0.634
+			}
+		},
+		"271": {
+			"name": "Southshore",
+			"parent": 267,
+			"fish": {
+				"albacore": 0.588
+			}
+		},
+		"294": {
+			"name": "Eastern Strand",
+			"parent": 267,
+			"fish": {
+				"albacore": 0.588
+			}
+		},
+		"295": {
+			"name": "Western Strand",
+			"parent": 267,
+			"fish": {
+				"albacore": 0.588
+			}
+		},
+		"298": {
+			"name": "Baradin Bay",
+			"parent": 11,
+			"fish": {
+				"albacore": 0.588
+			}
+		},
+		"299": {
+			"name": "Menethil Bay",
+			"parent": 11,
+			"fish": {
+				"albacore": 0.588
+			}
+		},
+		"302": {
+			"name": "The Crystal Shore",
+			"parent": 33,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"305": {
+			"name": "North Tide's Run",
+			"parent": 130,
+			"fish": {
+				"mackerel": 0.335,
+				"albacore": 0.5
+			}
+		},
+		"306": {
+			"name": "South Tide's Run",
+			"parent": 130,
+			"fish": {
+				"mackerel": 0.335,
+				"albacore": 0.5
+			}
+		},
+		"311": {
+			"name": "Ruins of Aboraz",
+			"parent": 33,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"327": {
+			"name": "Faldir's Cove",
+			"parent": 45,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"328": {
+			"name": "The Drowned Reef",
+			"parent": 45,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"331": {
+			"name": "Ashenvale",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.35,
+				"catfish": 0.634
+			}
+		},
+		"357": {
+			"name": "Feralas",
+			"parent": 0,
+			"fish": {
+				"catfish": 0.4,
+				"trout": 0.584
+			}
+		},
+		"361": {
+			"name": "Felwood",
+			"parent": 0,
+			"fish": {
+				"trout": 0.1,
+				"redgill": 0.354
+			}
+		},
+		"367": {
+			"name": "Sen'jin Village",
+			"parent": 14,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.588
+			}
+		},
+		"382": {
+			"name": "The Sludge Fen",
+			"parent": 17,
+			"fish": {
+				"snapper": 0.36,
+				"smallfish": 0.07,
+				"catfish": 0.15
+			}
+		},
+		"384": {
+			"name": "Dreadmist Peak",
+			"parent": 17,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"386": {
+			"name": "The Forgotten Pools",
+			"parent": 17,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.13,
+				"catfish": 0.15
+			}
+		},
+		"387": {
+			"name": "Lushwater Oasis",
+			"parent": 17,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.13,
+				"catfish": 0.15
+			}
+		},
+		"388": {
+			"name": "The Stagnant Oasis",
+			"parent": 17,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.13,
+				"catfish": 0.15
+			}
+		},
+		"400": {
+			"name": "Thousand Needles",
+			"parent": 0,
+			"fish": {
+				"catfish": 0.4,
+				"trout": 0.584
+			}
+		},
+		"405": {
+			"name": "Desolace",
+			"parent": 0,
+			"fish": {
+				"catfish": 0.4,
+				"trout": 0.584
+			}
+		},
+		"406": {
+			"name": "Stonetalon Mountains",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.35,
+				"catfish": 0.634
+			}
+		},
+		"414": {
+			"name": "The Zoram Strand",
+			"parent": 331,
+			"fish": {
+				"albacore": 0.588
+			}
+		},
+		"440": {
+			"name": "Tanaris",
+			"parent": 0,
+			"fish": {
+				"yellowtail": 0.253,
+				"cod": 0.1
+			}
+		},
+		"443": {
+			"name": "Ruins of Mathystra",
+			"parent": 148,
+			"fish": {
+				"snapper": 0.35,
+				"smallfish": 0.18,
+				"catfish": 0.15
+			}
+		},
+		"445": {
+			"name": "Cliffspring Falls",
+			"parent": 148,
+			"fish": {
+				"snapper": 0.35,
+				"smallfish": 0.18,
+				"catfish": 0.15
+			}
+		},
+		"448": {
+			"name": "Grove of the Ancients",
+			"parent": 148,
+			"fish": {
+				"snapper": 0.35,
+				"smallfish": 0.18,
+				"catfish": 0.15
+			}
+		},
+		"454": {
+			"name": "Wildbend River",
+			"parent": 148,
+			"fish": {
+				"snapper": 0.35,
+				"smallfish": 0.18,
+				"catfish": 0.15
+			}
+		},
+		"456": {
+			"name": "Cliffspring River",
+			"parent": 148,
+			"fish": {
+				"snapper": 0.35,
+				"smallfish": 0.18,
+				"catfish": 0.15
+			}
+		},
+		"463": {
+			"name": "Cragpool Lake",
+			"parent": 406,
+			"fish": {
+				"snapper": 0.36,
+				"smallfish": 0.07,
+				"catfish": 0.15
+			}
+		},
+		"490": {
+			"name": "Un'Goro Crater",
+			"parent": 0,
+			"fish": {
+				"trout": 0.1,
+				"redgill": 0.354
+			}
+		},
+		"493": {
+			"name": "Moonglade",
+			"parent": 0,
+			"fish": {
+				"trout": 0.1,
+				"redgill": 0.354
+			}
+		},
+		"513": {
+			"name": "Theramore Isle",
+			"parent": 15,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"516": {
+			"name": "Dustwallow Bay",
+			"parent": 15,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"517": {
+			"name": "Tidefury Cove",
+			"parent": 15,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"518": {
+			"name": "Dreadmurk Shore",
+			"parent": 15,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"618": {
+			"name": "Winterspring",
+			"parent": 0,
+			"fish": {
+				"redgill": 0.05
+			}
+		},
+		"636": {
+			"name": "Blackwolf River",
+			"parent": 406,
+			"fish": {
+				"snapper": 0.36,
+				"smallfish": 0.07,
+				"catfish": 0.15
+			}
+		},
+		"702": {
+			"name": "Rut'theran Village",
+			"parent": 141,
+			"fish": {
+				"mackerel": 0.98
+			}
+		},
+		"718": {
+			"name": "Wailing Caverns",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.13,
+				"catfish": 0.15
+			}
+		},
+		"719": {
+			"name": "Blackfathom Deeps",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.3
+			},
+			"incomplete": 0.55
+		},
+		"796": {
+			"name": "Scarlet Monastery",
+			"parent": 0,
+			"fish": {
+				"catfish": 0.4,
+				"trout": 0.584
+			}
+		},
+		"814": {
+			"name": "Southfury River",
+			"parent": 14,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.588
+			}
+		},
+		"815": {
+			"name": "Southfury River",
+			"parent": 17,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"1039": {
+			"name": "The Lost Fleet",
+			"parent": 11,
+			"fish": {
+				"albacore": 0.588
+			}
+		},
+		"1112": {
+			"name": "Jademir Lake",
+			"parent": 357,
+			"fish": {
+				"redgill": 0.05
+			}
+		},
+		"1156": {
+			"name": "Southern Barrens",
+			"parent": 17,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"1222": {
+			"name": "Hetaera's Clutch",
+			"parent": 16,
+			"fish": {
+				"yellowtail": 0.05
+			}
+		},
+		"1226": {
+			"name": "Temple of Arkkoran",
+			"parent": 16,
+			"fish": {
+				"yellowtail": 0.253,
+				"cod": 0.1
+			}
+		},
+		"1227": {
+			"name": "Bay of Storms",
+			"parent": 16,
+			"fish": {
+				"yellowtail": 0.05
+			}
+		},
+		"1228": {
+			"name": "The Shattered Strand",
+			"parent": 16,
+			"fish": {
+				"yellowtail": 0.253,
+				"cod": 0.1
+			}
+		},
+		"1229": {
+			"name": "Tower of Eldara",
+			"parent": 16,
+			"fish": {
+				"yellowtail": 0.253,
+				"cod": 0.1
+			}
+		},
+		"1230": {
+			"name": "Jagged Reef",
+			"parent": 16,
+			"fish": {
+				"yellowtail": 0.253,
+				"cod": 0.1
+			}
+		},
+		"1231": {
+			"name": "Southridge Beach",
+			"parent": 16,
+			"fish": {
+				"yellowtail": 0.253,
+				"cod": 0.1
+			}
+		},
+		"1256": {
+			"name": "The Ruined Reaches",
+			"parent": 16,
+			"fish": {
+				"yellowtail": 0.253,
+				"cod": 0.1
+			}
+		},
+		"1377": {
+			"name": "Silithus",
+			"parent": 0,
+			"fish": {
+				"redgill": 0.05
+			}
+		},
+		"1497": {
+			"name": "Undercity",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.125,
+				"catfish": 0.15
+			}
+		},
+		"1519": {
+			"name": "Stormwind City",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"1537": {
+			"name": "Ironforge",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"1577": {
+			"name": "The Cape of Stranglethorn",
+			"parent": 33,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"1581": {
+			"name": "The Deadmines",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"1637": {
+			"name": "Orgrimmar",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"1638": {
+			"name": "Thunder Bluff",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"1657": {
+			"name": "Darnassus",
+			"parent": 0,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"1701": {
+			"name": "Blackthorn Ridge",
+			"parent": 17,
+			"fish": {
+				"snapper": 0.5,
+				"smallfish": 0.18,
+				"catfish": 0.3
+			}
+		},
+		"1739": {
+			"name": "Bloodsail Compound",
+			"parent": 33,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"1797": {
+			"name": "Stagalbog",
+			"parent": 8,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"1977": {
+			"name": "Zul'Gurub",
+			"parent": 0,
+			"fish": {
+				"redgill": 0.05
+			}
+		},
+		"2017": {
+			"name": "Stratholme",
+			"parent": 0,
+			"fish": {
+				"redgill": 0.05
+			}
+		},
+		"2057": {
+			"name": "Scholomance",
+			"parent": 0,
+			"fish": {
+				"redgill": 0.05
+			}
+		},
+		"2077": {
+			"name": "Twilight Vale",
+			"parent": 148,
+			"fish": {
+				"snapper": 0.35,
+				"smallfish": 0.18,
+				"catfish": 0.15
+			}
+		},
+		"2079": {
+			"name": "Alcaz Island",
+			"parent": 15,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"2100": {
+			"name": "Maraudon",
+			"parent": 0,
+			"fish": {
+				"trout": 0.1,
+				"redgill": 0.354
+			}
+		},
+		"2104": {
+			"name": "Deepwater Tavern",
+			"parent": 11,
+			"fish": {
+				"albacore": 0.588
+			}
+		},
+		"2324": {
+			"name": "The Veiled Sea",
+			"parent": 405,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"2398": {
+			"name": "The Great Sea",
+			"parent": 130,
+			"fish": {
+				"mackerel": 0.335,
+				"albacore": 0.5
+			}
+		},
+		"2403": {
+			"name": "The Forbidding Sea",
+			"parent": 8,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"2405": {
+			"name": "Ethel Rethor",
+			"parent": 405,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"2406": {
+			"name": "Ranazjar Isle",
+			"parent": 405,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"2408": {
+			"name": "Shadowprey Village",
+			"parent": 405,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		},
+		"2979": {
+			"name": "Tor'kren Farm",
+			"parent": 14,
+			"fish": {
+				"snapper": 0.4,
+				"smallfish": 0.588
+			}
+		},
+		"3140": {
+			"name": "Scalebeard's Cave",
+			"parent": 16,
+			"fish": {
+				"yellowtail": 0.05
+			}
+		},
+		"3357": {
+			"name": "Yojamba Isle",
+			"parent": 33,
+			"fish": {
+				"yellowtail": 0.2,
+				"cod": 0.552
+			}
+		}
+	}
+}

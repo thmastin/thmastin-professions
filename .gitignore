@@ -1,0 +1,5 @@
+dist/
+drafts/
+# Local only: they name the author and the private pack.
+SESSION-LOG.md
+CLAUDE.md
