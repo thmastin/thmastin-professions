@@ -1,0 +1,74 @@
+# Publishes a new version of "thmastin's Professions" to polestar.guide when you push a tag like v1.2.0:
+#   git tag -a v1.2.0 -m "What changed in this version"
+#   git push origin v1.2.0
+# The tag must match "version" in pack.json; the tag's message becomes the release notes.
+# Needs the repository secret POLESTAR_TOKEN: this guide's publish token, made in the studio
+# (Your guides > thmastin-professions > Publishing).
+name: Publish to Polestar
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: polestar-publish
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  POLESTAR_URL: https://polestar.guide/api/packs/thmastin-professions/versions
+  # The folder with pack.json at its top, from the repository's root.
+  GUIDE_DIR: .
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Read the release notes from the tag
+        run: |
+          git fetch --no-tags --depth=1 origin "+refs/tags/$GITHUB_REF_NAME:refs/tags/$GITHUB_REF_NAME"
+          git for-each-ref --format='%(if:equals=tag)%(objecttype)%(then)%(contents:subject)%0a%0a%(contents:body)%(end)' "refs/tags/$GITHUB_REF_NAME" | head -c 5000 > "$RUNNER_TEMP/notes.txt"
+
+      - name: Zip the guide folder
+        working-directory: ${{ env.GUIDE_DIR }}
+        run: |
+          zip -q -r -D "$RUNNER_TEMP/guide.zip" . \
+            -i 'pack.json' 'legs.json' 'retired.json' 'LICENSE*' 'README*' '*.guide' '*.tga' '*.blp' \
+            -x 'dist/*' 'drafts/*' 'node_modules/*' '.*' '*/.*'
+          unzip -l "$RUNNER_TEMP/guide.zip"
+
+      - name: Upload to Polestar
+        env:
+          POLESTAR_TOKEN: ${{ secrets.POLESTAR_TOKEN }}
+        run: |
+          curl --fail-with-body --silent --show-error \
+            -H "Authorization: Bearer $POLESTAR_TOKEN" \
+            -F "files=@$RUNNER_TEMP/guide.zip" \
+            -F "version=${GITHUB_REF_NAME#v}" \
+            -F "changelog=<$RUNNER_TEMP/notes.txt" \
+            "$POLESTAR_URL"
+          echo
+
+      - name: Wait for the build
+        env:
+          POLESTAR_TOKEN: ${{ secrets.POLESTAR_TOKEN }}
+        run: |
+          for i in $(seq 60); do
+            build=$(curl --fail-with-body --silent --show-error --retry 6 --retry-delay 10 -H "Authorization: Bearer $POLESTAR_TOKEN" "$POLESTAR_URL/${GITHUB_REF_NAME#v}")
+            case "$(jq -r .status <<<"$build")" in
+              ready) echo "Built. It is published once its malware scan is clean (and a moderator has reviewed a first version)."; exit 0 ;;
+              failed) jq . <<<"$build"; exit 1 ;;
+            esac
+            sleep 10
+          done
+          echo "::notice::Still building after 10 minutes: see the guide's Versions tab in the studio."
