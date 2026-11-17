@@ -29,8 +29,9 @@ together: you catch the fish each Cooking range needs, then cook them.
 ## For players
 
 1. Install Polestar first.
-2. Download `PolestarPack_ThmastinsProfessions-<version>.zip` from this project's releases and unzip
-   it into the game's `Interface/AddOns/` folder, next to `Polestar`.
+2. Get "thmastin's Professions" from Community Guides on polestar.guide: the Polestar Client installs
+   and updates it, or download the zip there and unzip it into the game's `Interface/AddOns/` folder,
+   next to `Polestar`.
 3. Restart the game. Its guides appear in Polestar's guide menu
    (`/polestar guides`) under Community guides; Options > Community guides
    (`/polestar packs`) turns the addon on or off.
