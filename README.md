@@ -1,4 +1,4 @@
-# thmastin's Professions
+# Catch & Cook
 
 A community addon for Polestar, the leveling guide addon for World of
 Warcraft: Forever, by thmastin. It is a separate addon with thmastin's own
@@ -29,7 +29,7 @@ together: you catch the fish each Cooking range needs, then cook them.
 ## For players
 
 1. Install Polestar first.
-2. Get "thmastin's Professions" from Community Guides on polestar.guide: the Polestar Client installs
+2. Get "Catch & Cook" from Community Guides on polestar.guide: the Polestar Client installs
    and updates it, or download the zip there and unzip it into the game's `Interface/AddOns/` folder,
    next to `Polestar`.
 3. Restart the game. Its guides appear in Polestar's guide menu

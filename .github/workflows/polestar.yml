@@ -1,4 +1,4 @@
-# Publishes a new version of "thmastin's Professions" to polestar.guide when you push a tag like v1.2.0:
+# Publishes a new version of "Catch & Cook" to polestar.guide when you push a tag like v1.2.0:
 #   git tag -a v1.2.0 -m "What changed in this version"
 #   git push origin v1.2.0
 # The tag must match "version" in pack.json; the tag's message becomes the release notes.
