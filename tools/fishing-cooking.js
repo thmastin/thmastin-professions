@@ -308,7 +308,10 @@ function render(faction) {
 			const why = (p === null ? '' : ` About ${Math.round(p * 100)}% of catches there are ${R[w.recipe].fish}.`)
 				+ (out ? ` ${out.label} gives only about ${Math.round(rate(out) * 100)}% ${R[out.recipe].fish}, so it is left out.` : '');
 			const via = (F.via || {})[`${from}>${to}`];
-			L.push(`  tip The nearest good water for this range from ${from} is ${to}: ${w.note}.${via ? ` ${via}` : ''}${why} Any of ${options} works too: go there instead and the guide follows you.`);
+			const others = zones.filter((z) => z !== to);
+			const alt = others.length === 0 ? ''
+				: ` ${others.length === 1 ? others[0] : `Any of ${others.join(', ')}`} works too: go there instead and the guide follows you.`;
+			L.push(`  tip The nearest good water for this range from ${from} is ${to}: ${w.note}.${via ? ` ${via}` : ''}${why}${alt}`);
 			bandGoals(L, band, w, fishCount(F, key, w.recipe));
 			L.push(goto(w));
 		}

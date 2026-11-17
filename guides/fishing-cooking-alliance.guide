@@ -42,7 +42,7 @@ step Make Campfire Kits
 step Fishing 1-50: to Dun Morogh
   when zone "Ironforge"
   zone Dun Morogh
-  tip The nearest good water for this range from Ironforge is Dun Morogh: the frozen lake west of Kharanos. About 59% of catches there are Raw Brilliant Smallfish. Any of Elwynn Forest, Dun Morogh, Teldrassil, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Ironforge is Dun Morogh: the frozen lake west of Kharanos. About 59% of catches there are Raw Brilliant Smallfish. Any of Elwynn Forest, Teldrassil, Zephras Isle works too: go there instead and the guide follows you.
   learn 7751 nearest
   skill Fishing 50
   collect 6291 x50 anywhere optional
@@ -52,7 +52,7 @@ step Fishing 1-50: to Dun Morogh
 step Fishing 1-50: to Dun Morogh
   when zone "Loch Modan"
   zone Dun Morogh
-  tip The nearest good water for this range from Loch Modan is Dun Morogh: the frozen lake west of Kharanos. About 59% of catches there are Raw Brilliant Smallfish. Any of Elwynn Forest, Dun Morogh, Teldrassil, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Loch Modan is Dun Morogh: the frozen lake west of Kharanos. About 59% of catches there are Raw Brilliant Smallfish. Any of Elwynn Forest, Teldrassil, Zephras Isle works too: go there instead and the guide follows you.
   learn 7751 nearest
   skill Fishing 50
   collect 6291 x50 anywhere optional
@@ -62,7 +62,7 @@ step Fishing 1-50: to Dun Morogh
 step Fishing 1-50: to Elwynn Forest
   when zone "Westfall"
   zone Elwynn Forest
-  tip The nearest good water for this range from Westfall is Elwynn Forest: a quiet lake south of Goldshire. About 59% of catches there are Raw Brilliant Smallfish. Any of Elwynn Forest, Dun Morogh, Teldrassil, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Westfall is Elwynn Forest: a quiet lake south of Goldshire. About 59% of catches there are Raw Brilliant Smallfish. Any of Dun Morogh, Teldrassil, Zephras Isle works too: go there instead and the guide follows you.
   learn 7751 nearest
   skill Fishing 50
   collect 6291 x50 anywhere optional
@@ -72,7 +72,7 @@ step Fishing 1-50: to Elwynn Forest
 step Fishing 1-50: to Teldrassil
   when zone "Darkshore"
   zone Teldrassil
-  tip The nearest good water for this range from Darkshore is Teldrassil: salt water off the Rut'theran docks. About 98% of catches there are Raw Slitherskin Mackerel. Any of Elwynn Forest, Dun Morogh, Teldrassil, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Darkshore is Teldrassil: salt water off the Rut'theran docks. About 98% of catches there are Raw Slitherskin Mackerel. Any of Elwynn Forest, Dun Morogh, Zephras Isle works too: go there instead and the guide follows you.
   learn 7752 nearest
   skill Fishing 50
   collect 6303 x50 anywhere optional
@@ -82,7 +82,7 @@ step Fishing 1-50: to Teldrassil
 step Fishing 1-50: to Teldrassil
   when zone "Darnassus"
   zone Teldrassil
-  tip The nearest good water for this range from Darnassus is Teldrassil: salt water off the Rut'theran docks. About 98% of catches there are Raw Slitherskin Mackerel. Darnassus lake gives only about 18% Raw Brilliant Smallfish, so it is left out. Any of Elwynn Forest, Dun Morogh, Teldrassil, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Darnassus is Teldrassil: salt water off the Rut'theran docks. About 98% of catches there are Raw Slitherskin Mackerel. Darnassus lake gives only about 18% Raw Brilliant Smallfish, so it is left out. Any of Elwynn Forest, Dun Morogh, Zephras Isle works too: go there instead and the guide follows you.
   learn 7752 nearest
   skill Fishing 50
   collect 6303 x50 anywhere optional
@@ -92,7 +92,7 @@ step Fishing 1-50: to Teldrassil
 step Fishing 1-50: to Elwynn Forest
   when zone "Stormwind City"
   zone Elwynn Forest
-  tip The nearest good water for this range from Stormwind City is Elwynn Forest: a quiet lake south of Goldshire. About 59% of catches there are Raw Brilliant Smallfish. Canal docks gives only about 18% Raw Brilliant Smallfish, so it is left out. Any of Elwynn Forest, Dun Morogh, Teldrassil, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Stormwind City is Elwynn Forest: a quiet lake south of Goldshire. About 59% of catches there are Raw Brilliant Smallfish. Canal docks gives only about 18% Raw Brilliant Smallfish, so it is left out. Any of Dun Morogh, Teldrassil, Zephras Isle works too: go there instead and the guide follows you.
   learn 7751 nearest
   skill Fishing 50
   collect 6291 x50 anywhere optional
@@ -185,7 +185,7 @@ step Make Campfire Kits
 step Fishing 50-125: to Westfall
   when zone "Redridge Mountains"
   zone Westfall
-  tip The nearest good water for this range from Redridge Mountains is Westfall: the south coast below the lighthouse. About 50% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Westfall, Loch Modan works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Redridge Mountains is Westfall: the south coast below the lighthouse. About 50% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Loch Modan works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -195,7 +195,7 @@ step Fishing 50-125: to Westfall
 step Fishing 50-125: to Westfall
   when zone "Stormwind City"
   zone Westfall
-  tip The nearest good water for this range from Stormwind City is Westfall: the south coast below the lighthouse. About 50% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Westfall, Loch Modan works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Stormwind City is Westfall: the south coast below the lighthouse. About 50% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Loch Modan works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -205,7 +205,7 @@ step Fishing 50-125: to Westfall
 step Fishing 50-125: to Westfall
   when zone "Elwynn Forest"
   zone Westfall
-  tip The nearest good water for this range from Elwynn Forest is Westfall: the south coast below the lighthouse. About 50% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Westfall, Loch Modan works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Elwynn Forest is Westfall: the south coast below the lighthouse. About 50% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Loch Modan works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -215,7 +215,7 @@ step Fishing 50-125: to Westfall
 step Fishing 50-125: to Wetlands
   when zone "Ironforge"
   zone Wetlands
-  tip The nearest good water for this range from Ironforge is Wetlands: the harbour at Menethil. About 59% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Westfall, Loch Modan works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Ironforge is Wetlands: the harbour at Menethil. About 59% of catches there are Raw Rainbow Fin Albacore. Any of Westfall, Loch Modan works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -225,7 +225,7 @@ step Fishing 50-125: to Wetlands
 step Fishing 50-125: to Wetlands
   when zone "Dun Morogh"
   zone Wetlands
-  tip The nearest good water for this range from Dun Morogh is Wetlands: the harbour at Menethil. About 59% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Westfall, Loch Modan works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Dun Morogh is Wetlands: the harbour at Menethil. About 59% of catches there are Raw Rainbow Fin Albacore. Any of Westfall, Loch Modan works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -235,7 +235,7 @@ step Fishing 50-125: to Wetlands
 step Fishing 50-125: to Wetlands
   when zone "Darnassus"
   zone Wetlands
-  tip The nearest good water for this range from Darnassus is Wetlands: the harbour at Menethil. Take the portal down to Rut'theran Village, the boat to Auberdine, then the Menethil boat. About 59% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Westfall, Loch Modan works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Darnassus is Wetlands: the harbour at Menethil. Take the portal down to Rut'theran Village, the boat to Auberdine, then the Menethil boat. About 59% of catches there are Raw Rainbow Fin Albacore. Any of Westfall, Loch Modan works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -245,7 +245,7 @@ step Fishing 50-125: to Wetlands
 step Fishing 50-125: to Wetlands
   when zone "Teldrassil"
   zone Wetlands
-  tip The nearest good water for this range from Teldrassil is Wetlands: the harbour at Menethil. Take the boat from Rut'theran Village to Auberdine, then the Menethil boat from the next pier. About 59% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Westfall, Loch Modan works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Teldrassil is Wetlands: the harbour at Menethil. Take the boat from Rut'theran Village to Auberdine, then the Menethil boat from the next pier. About 59% of catches there are Raw Rainbow Fin Albacore. Any of Westfall, Loch Modan works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -255,7 +255,7 @@ step Fishing 50-125: to Wetlands
 step Fishing 50-125: to Wetlands
   when zone "Darkshore"
   zone Wetlands
-  tip The nearest good water for this range from Darkshore is Wetlands: the harbour at Menethil. Take the boat from the Auberdine docks to Menethil Harbor. About 59% of catches there are Raw Rainbow Fin Albacore. Any of Wetlands, Westfall, Loch Modan works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Darkshore is Wetlands: the harbour at Menethil. Take the boat from the Auberdine docks to Menethil Harbor. About 59% of catches there are Raw Rainbow Fin Albacore. Any of Westfall, Loch Modan works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -326,7 +326,7 @@ step Fishing 50-125: anywhere
 step Fishing 125-150: to Redridge Mountains
   when zone "Wetlands"
   zone Redridge Mountains
-  tip The nearest good water for this range from Wetlands is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Wetlands is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -336,7 +336,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Redridge Mountains
   when zone "Stormwind City"
   zone Redridge Mountains
-  tip The nearest good water for this range from Stormwind City is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Stormwind City is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -346,7 +346,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Redridge Mountains
   when zone "Elwynn Forest"
   zone Redridge Mountains
-  tip The nearest good water for this range from Elwynn Forest is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Elwynn Forest is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -356,7 +356,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Redridge Mountains
   when zone "Westfall"
   zone Redridge Mountains
-  tip The nearest good water for this range from Westfall is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Westfall is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -366,7 +366,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Redridge Mountains
   when zone "Ironforge"
   zone Redridge Mountains
-  tip The nearest good water for this range from Ironforge is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Ironforge is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -376,7 +376,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Redridge Mountains
   when zone "Loch Modan"
   zone Redridge Mountains
-  tip The nearest good water for this range from Loch Modan is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Loch Modan is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -386,7 +386,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Ashenvale
   when zone "Darnassus"
   zone Ashenvale
-  tip The nearest good water for this range from Darnassus is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Darnassus is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Redridge Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -396,7 +396,7 @@ step Fishing 125-150: to Ashenvale
 step Fishing 125-150: to Ashenvale
   when zone "Darkshore"
   zone Ashenvale
-  tip The nearest good water for this range from Darkshore is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Darkshore is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Redridge Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -463,7 +463,7 @@ step Expert Fishing and Cooking
 step Fishing 150-175: to Redridge Mountains
   when zone "Wetlands"
   zone Redridge Mountains
-  tip The nearest good water for this range from Wetlands is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Wetlands is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -473,7 +473,7 @@ step Fishing 150-175: to Redridge Mountains
 step Fishing 150-175: to Redridge Mountains
   when zone "Stormwind City"
   zone Redridge Mountains
-  tip The nearest good water for this range from Stormwind City is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Stormwind City is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -483,7 +483,7 @@ step Fishing 150-175: to Redridge Mountains
 step Fishing 150-175: to Redridge Mountains
   when zone "Elwynn Forest"
   zone Redridge Mountains
-  tip The nearest good water for this range from Elwynn Forest is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Elwynn Forest is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -493,7 +493,7 @@ step Fishing 150-175: to Redridge Mountains
 step Fishing 150-175: to Redridge Mountains
   when zone "Westfall"
   zone Redridge Mountains
-  tip The nearest good water for this range from Westfall is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Westfall is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -503,7 +503,7 @@ step Fishing 150-175: to Redridge Mountains
 step Fishing 150-175: to Redridge Mountains
   when zone "Ironforge"
   zone Redridge Mountains
-  tip The nearest good water for this range from Ironforge is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Ironforge is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -513,7 +513,7 @@ step Fishing 150-175: to Redridge Mountains
 step Fishing 150-175: to Redridge Mountains
   when zone "Loch Modan"
   zone Redridge Mountains
-  tip The nearest good water for this range from Loch Modan is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Loch Modan is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -523,7 +523,7 @@ step Fishing 150-175: to Redridge Mountains
 step Fishing 150-175: to Ashenvale
   when zone "Darnassus"
   zone Ashenvale
-  tip The nearest good water for this range from Darnassus is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Darnassus is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Redridge Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -533,7 +533,7 @@ step Fishing 150-175: to Ashenvale
 step Fishing 150-175: to Ashenvale
   when zone "Darkshore"
   zone Ashenvale
-  tip The nearest good water for this range from Darkshore is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Redridge Mountains, Ashenvale works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Darkshore is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Redridge Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -593,7 +593,7 @@ step Fishing 150-175: anywhere
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Stormwind City"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Stormwind City is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Stormwind City is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -603,7 +603,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Ironforge"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Ironforge is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Ironforge is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -613,7 +613,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Loch Modan"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Loch Modan is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Loch Modan is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -623,7 +623,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Wetlands"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Wetlands is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Take the boat from Menethil Harbor to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Wetlands is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Take the boat from Menethil Harbor to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -633,7 +633,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Redridge Mountains"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Redridge Mountains is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Redridge Mountains is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -643,7 +643,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Darnassus"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Darnassus is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Darnassus is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -653,7 +653,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Ashenvale"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Ashenvale is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Ashenvale is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -663,7 +663,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Alterac Mountains
   when zone "Hillsbrad Foothills"
   zone Alterac Mountains
-  tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -802,7 +802,7 @@ step Back to Nat Pagle
 step Fishing 225-300: to Azshara
   when zone "Dustwallow Marsh"
   zone Azshara
-  tip The nearest good water for this range from Dustwallow Marsh is Azshara: the east coast. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Dustwallow Marsh is Azshara: the east coast. About 35% of catches there are Raw Redgill. Tanaris works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
@@ -812,7 +812,7 @@ step Fishing 225-300: to Azshara
 step Fishing 225-300: to Azshara
   when zone "Stormwind City"
   zone Azshara
-  tip The nearest good water for this range from Stormwind City is Azshara: the east coast. Take the boat from Stormwind Harbor to Auberdine, then fly to Azshara. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Stormwind City is Azshara: the east coast. Take the boat from Stormwind Harbor to Auberdine, then fly to Azshara. About 35% of catches there are Raw Redgill. Tanaris works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
@@ -822,7 +822,7 @@ step Fishing 225-300: to Azshara
 step Fishing 225-300: to Azshara
   when zone "Ironforge"
   zone Azshara
-  tip The nearest good water for this range from Ironforge is Azshara: the east coast. Fly to Menethil Harbor, take the boat to Theramore, then fly to Azshara. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Ironforge is Azshara: the east coast. Fly to Menethil Harbor, take the boat to Theramore, then fly to Azshara. About 35% of catches there are Raw Redgill. Tanaris works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
@@ -832,7 +832,7 @@ step Fishing 225-300: to Azshara
 step Fishing 225-300: to Azshara
   when zone "Darnassus"
   zone Azshara
-  tip The nearest good water for this range from Darnassus is Azshara: the east coast. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Darnassus is Azshara: the east coast. About 35% of catches there are Raw Redgill. Tanaris works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
@@ -842,7 +842,7 @@ step Fishing 225-300: to Azshara
 step Fishing 225-300: to Azshara
   when zone "Feralas"
   zone Azshara
-  tip The nearest good water for this range from Feralas is Azshara: the east coast. About 35% of catches there are Raw Redgill. Feathermoon gives only about 0% Raw Spotted Yellowtail, so it is left out. Any of Azshara, Tanaris works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Feralas is Azshara: the east coast. About 35% of catches there are Raw Redgill. Feathermoon gives only about 0% Raw Spotted Yellowtail, so it is left out. Tanaris works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
@@ -852,7 +852,7 @@ step Fishing 225-300: to Azshara
 step Fishing 225-300: to Azshara
   when zone "Stranglethorn Vale"
   zone Azshara
-  tip The nearest good water for this range from Stranglethorn Vale is Azshara: the east coast. Take the boat from Booty Bay to Ratchet, then fly to Azshara. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Stranglethorn Vale is Azshara: the east coast. Take the boat from Booty Bay to Ratchet, then fly to Azshara. About 35% of catches there are Raw Redgill. Tanaris works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional

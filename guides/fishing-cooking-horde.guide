@@ -42,7 +42,7 @@ step Make Campfire Kits
 step Fishing 1-50: to Durotar
   when zone "Orgrimmar"
   zone Durotar
-  tip The nearest good water for this range from Orgrimmar is Durotar: the sea below Sen'jin Village. About 98% of catches there are Raw Slitherskin Mackerel. Any of Durotar, Mulgore, Tirisfal Glades, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Orgrimmar is Durotar: the sea below Sen'jin Village. About 98% of catches there are Raw Slitherskin Mackerel. Any of Mulgore, Tirisfal Glades, Zephras Isle works too: go there instead and the guide follows you.
   learn 7752 nearest
   skill Fishing 50
   collect 6303 x50 anywhere optional
@@ -52,7 +52,7 @@ step Fishing 1-50: to Durotar
 step Fishing 1-50: to Durotar
   when zone "The Barrens"
   zone Durotar
-  tip The nearest good water for this range from The Barrens is Durotar: the sea below Sen'jin Village. About 98% of catches there are Raw Slitherskin Mackerel. Any of Durotar, Mulgore, Tirisfal Glades, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from The Barrens is Durotar: the sea below Sen'jin Village. About 98% of catches there are Raw Slitherskin Mackerel. Any of Mulgore, Tirisfal Glades, Zephras Isle works too: go there instead and the guide follows you.
   learn 7752 nearest
   skill Fishing 50
   collect 6303 x50 anywhere optional
@@ -62,7 +62,7 @@ step Fishing 1-50: to Durotar
 step Fishing 1-50: to Tirisfal Glades
   when zone "Silverpine Forest"
   zone Tirisfal Glades
-  tip The nearest good water for this range from Silverpine Forest is Tirisfal Glades: the lake east of Brill. Any of Durotar, Mulgore, Tirisfal Glades, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Silverpine Forest is Tirisfal Glades: the lake east of Brill. Any of Durotar, Mulgore, Zephras Isle works too: go there instead and the guide follows you.
   learn 7751 nearest
   skill Fishing 50
   collect 6291 x50 anywhere optional
@@ -72,7 +72,7 @@ step Fishing 1-50: to Tirisfal Glades
 step Fishing 1-50: to Mulgore
   when zone "Thunder Bluff"
   zone Mulgore
-  tip The nearest good water for this range from Thunder Bluff is Mulgore: the lake south of Bloodhoof Village. About 59% of catches there are Raw Brilliant Smallfish. Thunder Bluff pools gives only about 18% Raw Brilliant Smallfish, so it is left out. Any of Durotar, Mulgore, Tirisfal Glades, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Thunder Bluff is Mulgore: the lake south of Bloodhoof Village. About 59% of catches there are Raw Brilliant Smallfish. Thunder Bluff pools gives only about 18% Raw Brilliant Smallfish, so it is left out. Any of Durotar, Tirisfal Glades, Zephras Isle works too: go there instead and the guide follows you.
   learn 7751 nearest
   skill Fishing 50
   collect 6291 x50 anywhere optional
@@ -82,7 +82,7 @@ step Fishing 1-50: to Mulgore
 step Fishing 1-50: to Tirisfal Glades
   when zone "Undercity"
   zone Tirisfal Glades
-  tip The nearest good water for this range from Undercity is Tirisfal Glades: the lake east of Brill. Undercity canals gives only about 13% Raw Brilliant Smallfish, so it is left out. Any of Durotar, Mulgore, Tirisfal Glades, Zephras Isle works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Undercity is Tirisfal Glades: the lake east of Brill. Undercity canals gives only about 13% Raw Brilliant Smallfish, so it is left out. Any of Durotar, Mulgore, Zephras Isle works too: go there instead and the guide follows you.
   learn 7751 nearest
   skill Fishing 50
   collect 6291 x50 anywhere optional
@@ -174,7 +174,7 @@ step Make Campfire Kits
 step Fishing 50-125: to The Barrens
   when zone "Orgrimmar"
   zone The Barrens
-  tip The nearest good water for this range from Orgrimmar is The Barrens: the sea at Ratchet, where Kilxx sells recipes. About 50% of catches there are Raw Rainbow Fin Albacore. Any of The Barrens, Silverpine Forest works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Orgrimmar is The Barrens: the sea at Ratchet, where Kilxx sells recipes. About 50% of catches there are Raw Rainbow Fin Albacore. Silverpine Forest works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -184,7 +184,7 @@ step Fishing 50-125: to The Barrens
 step Fishing 50-125: to The Barrens
   when zone "Durotar"
   zone The Barrens
-  tip The nearest good water for this range from Durotar is The Barrens: the sea at Ratchet, where Kilxx sells recipes. About 50% of catches there are Raw Rainbow Fin Albacore. Any of The Barrens, Silverpine Forest works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Durotar is The Barrens: the sea at Ratchet, where Kilxx sells recipes. About 50% of catches there are Raw Rainbow Fin Albacore. Silverpine Forest works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -194,7 +194,7 @@ step Fishing 50-125: to The Barrens
 step Fishing 50-125: to The Barrens
   when zone "Thunder Bluff"
   zone The Barrens
-  tip The nearest good water for this range from Thunder Bluff is The Barrens: the sea at Ratchet, where Kilxx sells recipes. About 50% of catches there are Raw Rainbow Fin Albacore. Any of The Barrens, Silverpine Forest works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Thunder Bluff is The Barrens: the sea at Ratchet, where Kilxx sells recipes. About 50% of catches there are Raw Rainbow Fin Albacore. Silverpine Forest works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -204,7 +204,7 @@ step Fishing 50-125: to The Barrens
 step Fishing 50-125: to The Barrens
   when zone "Mulgore"
   zone The Barrens
-  tip The nearest good water for this range from Mulgore is The Barrens: the sea at Ratchet, where Kilxx sells recipes. About 50% of catches there are Raw Rainbow Fin Albacore. Any of The Barrens, Silverpine Forest works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Mulgore is The Barrens: the sea at Ratchet, where Kilxx sells recipes. About 50% of catches there are Raw Rainbow Fin Albacore. Silverpine Forest works too: go there instead and the guide follows you.
   learn 7827 nearest
   skill Fishing 125
   collect 6361 x68 anywhere optional
@@ -214,7 +214,7 @@ step Fishing 50-125: to The Barrens
 step Fishing 50-125: to Silverpine Forest
   when zone "Undercity"
   zone Silverpine Forest
-  tip The nearest good water for this range from Undercity is Silverpine Forest: the lake shore east of the Sepulcher. Any of The Barrens, Silverpine Forest works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Undercity is Silverpine Forest: the lake shore east of the Sepulcher. The Barrens works too: go there instead and the guide follows you.
   learn 7753 nearest
   skill Fishing 125
   collect 6289 x68 anywhere optional
@@ -224,7 +224,7 @@ step Fishing 50-125: to Silverpine Forest
 step Fishing 50-125: to Silverpine Forest
   when zone "Tirisfal Glades"
   zone Silverpine Forest
-  tip The nearest good water for this range from Tirisfal Glades is Silverpine Forest: the lake shore east of the Sepulcher. Any of The Barrens, Silverpine Forest works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Tirisfal Glades is Silverpine Forest: the lake shore east of the Sepulcher. The Barrens works too: go there instead and the guide follows you.
   learn 7753 nearest
   skill Fishing 125
   collect 6289 x68 anywhere optional
@@ -283,7 +283,7 @@ step Fishing 50-125: anywhere
 step Fishing 125-150: to Stonetalon Mountains
   when zone "Orgrimmar"
   zone Stonetalon Mountains
-  tip The nearest good water for this range from Orgrimmar is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Orgrimmar is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -293,7 +293,7 @@ step Fishing 125-150: to Stonetalon Mountains
 step Fishing 125-150: to Stonetalon Mountains
   when zone "The Barrens"
   zone Stonetalon Mountains
-  tip The nearest good water for this range from The Barrens is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from The Barrens is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -303,7 +303,7 @@ step Fishing 125-150: to Stonetalon Mountains
 step Fishing 125-150: to Stonetalon Mountains
   when zone "Thunder Bluff"
   zone Stonetalon Mountains
-  tip The nearest good water for this range from Thunder Bluff is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Thunder Bluff is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -313,7 +313,7 @@ step Fishing 125-150: to Stonetalon Mountains
 step Fishing 125-150: to Stonetalon Mountains
   when zone "Mulgore"
   zone Stonetalon Mountains
-  tip The nearest good water for this range from Mulgore is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Mulgore is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -323,7 +323,7 @@ step Fishing 125-150: to Stonetalon Mountains
 step Fishing 125-150: to Alterac Mountains
   when zone "Undercity"
   zone Alterac Mountains
-  tip The nearest good water for this range from Undercity is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Undercity is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -333,7 +333,7 @@ step Fishing 125-150: to Alterac Mountains
 step Fishing 125-150: to Alterac Mountains
   when zone "Silverpine Forest"
   zone Alterac Mountains
-  tip The nearest good water for this range from Silverpine Forest is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Silverpine Forest is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -343,7 +343,7 @@ step Fishing 125-150: to Alterac Mountains
 step Fishing 125-150: to Alterac Mountains
   when zone "Hillsbrad Foothills"
   zone Alterac Mountains
-  tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -420,7 +420,7 @@ step Expert Fishing and Cooking
 step Fishing 150-175: to Stonetalon Mountains
   when zone "Orgrimmar"
   zone Stonetalon Mountains
-  tip The nearest good water for this range from Orgrimmar is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Orgrimmar is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -430,7 +430,7 @@ step Fishing 150-175: to Stonetalon Mountains
 step Fishing 150-175: to Stonetalon Mountains
   when zone "The Barrens"
   zone Stonetalon Mountains
-  tip The nearest good water for this range from The Barrens is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from The Barrens is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -440,7 +440,7 @@ step Fishing 150-175: to Stonetalon Mountains
 step Fishing 150-175: to Stonetalon Mountains
   when zone "Thunder Bluff"
   zone Stonetalon Mountains
-  tip The nearest good water for this range from Thunder Bluff is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Thunder Bluff is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -450,7 +450,7 @@ step Fishing 150-175: to Stonetalon Mountains
 step Fishing 150-175: to Stonetalon Mountains
   when zone "Mulgore"
   zone Stonetalon Mountains
-  tip The nearest good water for this range from Mulgore is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Mulgore is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -460,7 +460,7 @@ step Fishing 150-175: to Stonetalon Mountains
 step Fishing 150-175: to Alterac Mountains
   when zone "Undercity"
   zone Alterac Mountains
-  tip The nearest good water for this range from Undercity is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Undercity is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -470,7 +470,7 @@ step Fishing 150-175: to Alterac Mountains
 step Fishing 150-175: to Alterac Mountains
   when zone "Silverpine Forest"
   zone Alterac Mountains
-  tip The nearest good water for this range from Silverpine Forest is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Silverpine Forest is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -480,7 +480,7 @@ step Fishing 150-175: to Alterac Mountains
 step Fishing 150-175: to Alterac Mountains
   when zone "Hillsbrad Foothills"
   zone Alterac Mountains
-  tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale works too: go there instead and the guide follows you.
   learn 7755 nearest
   skill Fishing 175
   collect 6308 x111 anywhere optional
@@ -550,7 +550,7 @@ step Fishing 150-175: anywhere
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Orgrimmar"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Orgrimmar is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Orgrimmar is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -560,7 +560,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Dustwallow Marsh
   when zone "The Barrens"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from The Barrens is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from The Barrens is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -570,7 +570,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Durotar"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Durotar is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Durotar is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -580,7 +580,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Thunder Bluff"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Thunder Bluff is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Thunder Bluff is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -590,7 +590,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Stonetalon Mountains"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Stonetalon Mountains is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Stonetalon Mountains is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -600,7 +600,7 @@ step Fishing 175-225: to Dustwallow Marsh
 step Fishing 175-225: to Alterac Mountains
   when zone "Undercity"
   zone Alterac Mountains
-  tip The nearest good water for this range from Undercity is Alterac Mountains: the lake by the ruins of Alterac. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Undercity is Alterac Mountains: the lake by the ruins of Alterac. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -610,7 +610,7 @@ step Fishing 175-225: to Alterac Mountains
 step Fishing 175-225: to Alterac Mountains
   when zone "Hillsbrad Foothills"
   zone Alterac Mountains
-  tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -758,7 +758,7 @@ step Back to Nat Pagle
 step Fishing 225-300: to Azshara
   when zone "Dustwallow Marsh"
   zone Azshara
-  tip The nearest good water for this range from Dustwallow Marsh is Azshara: the east coast. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris, The Hinterlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Dustwallow Marsh is Azshara: the east coast. About 35% of catches there are Raw Redgill. Any of Tanaris, The Hinterlands works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
@@ -768,7 +768,7 @@ step Fishing 225-300: to Azshara
 step Fishing 225-300: to Azshara
   when zone "Orgrimmar"
   zone Azshara
-  tip The nearest good water for this range from Orgrimmar is Azshara: the east coast. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris, The Hinterlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Orgrimmar is Azshara: the east coast. About 35% of catches there are Raw Redgill. Any of Tanaris, The Hinterlands works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
@@ -778,7 +778,7 @@ step Fishing 225-300: to Azshara
 step Fishing 225-300: to Azshara
   when zone "Thunder Bluff"
   zone Azshara
-  tip The nearest good water for this range from Thunder Bluff is Azshara: the east coast. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris, The Hinterlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Thunder Bluff is Azshara: the east coast. About 35% of catches there are Raw Redgill. Any of Tanaris, The Hinterlands works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
@@ -788,7 +788,7 @@ step Fishing 225-300: to Azshara
 step Fishing 225-300: to Azshara
   when zone "Feralas"
   zone Azshara
-  tip The nearest good water for this range from Feralas is Azshara: the east coast. About 35% of catches there are Raw Redgill. Verdantis River gives only about 0% Raw Redgill, so it is left out. Any of Azshara, Tanaris, The Hinterlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Feralas is Azshara: the east coast. About 35% of catches there are Raw Redgill. Verdantis River gives only about 0% Raw Redgill, so it is left out. Any of Tanaris, The Hinterlands works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
@@ -798,7 +798,7 @@ step Fishing 225-300: to Azshara
 step Fishing 225-300: to The Hinterlands
   when zone "Undercity"
   zone The Hinterlands
-  tip The nearest good water for this range from Undercity is The Hinterlands: the sea below Revantusk Village. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris, The Hinterlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Undercity is The Hinterlands: the sea below Revantusk Village. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
@@ -808,7 +808,7 @@ step Fishing 225-300: to The Hinterlands
 step Fishing 225-300: to Azshara
   when zone "Stranglethorn Vale"
   zone Azshara
-  tip The nearest good water for this range from Stranglethorn Vale is Azshara: the east coast. Take the boat from Booty Bay to Ratchet, then fly to Azshara. About 35% of catches there are Raw Redgill. Any of Azshara, Tanaris, The Hinterlands works too: go there instead and the guide follows you.
+  tip The nearest good water for this range from Stranglethorn Vale is Azshara: the east coast. Take the boat from Booty Bay to Ratchet, then fly to Azshara. About 35% of catches there are Raw Redgill. Any of Tanaris, The Hinterlands works too: go there instead and the guide follows you.
   learn 18241 nearest
   skill Fishing 300
   collect 13758 x120 anywhere optional
