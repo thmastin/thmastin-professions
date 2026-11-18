@@ -7,15 +7,15 @@ const fs = require('fs');
 const path = require('path');
 
 const R = {
-	smallfish: { item: 6291, spell: 7751, name: 'Brilliant Smallfish', fish: 'Raw Brilliant Smallfish' },
-	mackerel: { item: 6303, spell: 7752, name: 'Slitherskin Mackerel', fish: 'Raw Slitherskin Mackerel' },
-	snapper: { item: 6289, spell: 7753, name: 'Longjaw Mud Snapper', fish: 'Raw Longjaw Mud Snapper' },
-	albacore: { item: 6361, spell: 7827, name: 'Rainbow Fin Albacore', fish: 'Raw Rainbow Fin Albacore' },
-	catfish: { item: 6308, spell: 7755, name: 'Bristle Whisker Catfish', fish: 'Raw Bristle Whisker Catfish' },
-	cod: { item: 6362, spell: 7828, name: 'Rockscale Cod', fish: 'Raw Rockscale Cod' },
-	trout: { item: 8365, spell: 20916, name: 'Mithril Headed Trout', fish: 'Raw Mithril Head Trout' },
-	yellowtail: { item: 4603, spell: 18238, name: 'Spotted Yellowtail', fish: 'Raw Spotted Yellowtail' },
-	redgill: { item: 13758, spell: 18241, name: 'Filet of Redgill', fish: 'Raw Redgill' },
+	smallfish: { book: 6325, item: 6291, spell: 7751, name: 'Brilliant Smallfish', fish: 'Raw Brilliant Smallfish' },
+	mackerel: { book: 6326, item: 6303, spell: 7752, name: 'Slitherskin Mackerel', fish: 'Raw Slitherskin Mackerel' },
+	snapper: { book: 6328, item: 6289, spell: 7753, name: 'Longjaw Mud Snapper', fish: 'Raw Longjaw Mud Snapper' },
+	albacore: { book: 6368, item: 6361, spell: 7827, name: 'Rainbow Fin Albacore', fish: 'Raw Rainbow Fin Albacore' },
+	catfish: { book: 6330, item: 6308, spell: 7755, name: 'Bristle Whisker Catfish', fish: 'Raw Bristle Whisker Catfish' },
+	cod: { book: 6369, item: 6362, spell: 7828, name: 'Rockscale Cod', fish: 'Raw Rockscale Cod' },
+	trout: { book: 17062, item: 8365, spell: 20916, name: 'Mithril Headed Trout', fish: 'Raw Mithril Head Trout' },
+	yellowtail: { book: 13939, item: 4603, spell: 18238, name: 'Spotted Yellowtail', fish: 'Raw Spotted Yellowtail' },
+	redgill: { book: 13941, item: 13758, spell: 18241, name: 'Filet of Redgill', fish: 'Raw Redgill' },
 };
 
 // A water: zone, point, frame ('e' Era, 'l' live), label, recipe it feeds, a short note, and the
@@ -166,9 +166,21 @@ const uniq = (a) => [...new Set(a)];
 // The fish line is a bag count under the guide's one section (Cooking 1-300): Polestar lowers it
 // by what the section's crafts would have used up to the player's Cooking, so it reads as the
 // fish still needed for this band. Its count is cumulative from Cooking 1 (fishCount).
+// Its own step before each water step (same conditions): buy the recipe item, then learn it.
+// Gone once the recipe is known (`when !knows`), so the buy's bag count can't hold anything.
+function recipeStep(L, whens, w) {
+	const r = R[w.recipe];
+	L.push('');
+	L.push(`step Buy Recipe: ${r.name}`);
+	for (const c of whens) L.push(`  when ${c}`);
+	L.push(`  when !knows ${r.spell}`);
+	L.push(`  tip Recipe: ${r.name} is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.`);
+	L.push(`  buy ${r.book} x1 nearest`);
+	L.push(`  learn ${r.spell}`);
+}
+
 function bandGoals(L, band, w, count) {
 	const r = R[w.recipe];
-	if (band.note) L.push(`  note ${band.note}`);
 	L.push(`  learn ${r.spell} nearest`);
 	L.push(`  skill Fishing ${band.fish[1]}`);
 	L.push(`  collect ${r.item} x${count} anywhere optional`); // optional: Polestar caches the count per skill level (Own.sectionDemand memo), so it can be stale until a skill-up or /reload
@@ -284,6 +296,8 @@ function render(faction) {
 
 	const waterSteps = (key) => {
 		const band = BANDS[key];
+		// A band's note goes on the tip: Polestar folds `note` lines into the step's collapsed goals.
+		const extra = band.note ? ` ${band.note}` : '';
 		const waters = goodWaters(key, F.waters[key]);
 		const hubs = F.hubs[key] || {};
 		const zones = uniq(waters.map((w) => w.zone));
@@ -296,10 +310,15 @@ function render(faction) {
 		const listed = uniq([...zones, ...Object.keys(hubs)]);
 		const range = `${band.fish[0]}-${band.fish[1]}`;
 		const options = zones.join(', ');
+		// One recipe for the whole band: one Buy Recipe step up front, else one before each water step.
+		const oneRecipe = uniq(waters.map((w) => w.recipe)).length === 1;
+		const buyRecipe = (whens, w) => { if (!oneRecipe) recipeStep(L, whens, w); };
+		if (oneRecipe) recipeStep(L, [], def);
 
 		for (const [from, to] of Object.entries(hubs)) {
 			if (zones.includes(from)) continue;
 			const w = byZone(to);
+			buyRecipe([`zone "${from}"`], w);
 			L.push('');
 			L.push(`step Fishing ${range}: to ${to}`);
 			L.push(`  when zone "${from}"`);
@@ -312,37 +331,40 @@ function render(faction) {
 			const others = zones.filter((z) => z !== to);
 			const alt = others.length === 0 ? ''
 				: ` ${others.length === 1 ? others[0] : `Any of ${others.join(', ')}`} works too: go there instead and the guide follows you.`;
-			L.push(`  tip The nearest good water for this range from ${from} is ${to}: ${w.note}.${via ? ` ${via}` : ''}${why}${alt}`);
+			L.push(`  tip The nearest good water for this range from ${from} is ${to}: ${w.note}.${via ? ` ${via}` : ''}${why}${alt}${extra}`);
 			bandGoals(L, band, w, fishCount(F, key, w.recipe));
 			L.push(goto(w));
 		}
 
+		buyRecipe(listed.map((z) => `!zone "${z}"`), def);
 		L.push('');
 		L.push(`step Fishing ${range}: pick a water`);
 		for (const z of listed) L.push(`  when !zone "${z}"`);
 		L.push(`  zone ${def.zone}`);
-		L.push(`  tip Fish in any of ${options}. The arrow points at ${def.zone}; go to whichever is closer and the guide switches to that zone's step when you arrive.`);
+		L.push(`  tip Fish in any of ${options}. The arrow points at ${def.zone}; go to whichever is closer and the guide switches to that zone's step when you arrive.${extra}`);
 		bandGoals(L, band, def, fishCount(F, key, def.recipe));
 		L.push(goto(def));
 
 		for (const w of waters) {
 			const same = waters.filter((x) => x.zone === w.zone);
 			if (same[0] !== w) continue;
+			buyRecipe([`zone "${w.zone}"`], w);
 			L.push('');
 			L.push(`step Fishing ${range}: ${w.zone}`);
 			L.push(`  when zone "${w.zone}"`);
 			L.push(`  zone ${w.zone}`);
 			let tip = bandTip(band, w);
 			if (same.length > 1) tip += ` The ${same.slice(1).map((x) => `${x.label} (${x.note}) gives ${R[x.recipe].fish}`).join('; ')}.`;
-			L.push(`  tip ${tip}`);
+			L.push(`  tip ${tip}${extra}`);
 			bandGoals(L, band, w, fishCount(F, key, w.recipe));
 			for (const x of same) L.push(goto(x));
 		}
 
+		buyRecipe([], def);
 		L.push('');
 		L.push(`step Fishing ${range}: anywhere`);
 		L.push(`  zone ${def.zone}`);
-		L.push(`  tip Keep going at any of ${options}; the arrow points at ${def.zone}.`);
+		L.push(`  tip Keep going at any of ${options}; the arrow points at ${def.zone}.${extra}`);
 		bandGoals(L, band, def, fishCount(F, key, def.recipe));
 		L.push(goto(def));
 	};
@@ -354,7 +376,7 @@ function render(faction) {
 	// (a quest reward, Blump Family Fishing Pole) would hold the step forever.
 	L.push('step Get a Fishing Pole');
 	L.push('  when !skill Fishing 1');
-	L.push('  tip You fish with a pole equipped. The arrow picks the nearest seller. Any fishing pole works; if you already have one, skip this step.');
+	L.push('  tip You fish with a pole equipped. The arrow picks the nearest seller, but its vendor list is from Classic and some trade suppliers on it have no pole on Forever: if yours has none, try a Fishing Supplies vendor (one usually stands near the fishing trainer). Any fishing pole works; if you already have one, skip this step.');
 	L.push('  buy 6256 x1 nearest');
 	L.push('');
 	L.push('step Learn Fishing and Cooking');
@@ -452,12 +474,13 @@ function render(faction) {
 	L.push('  turnin 6610');
 
 	L.push('');
-	L.push('step Spotted Yellowtail recipe');
+	L.push('step Buy Recipe: Spotted Yellowtail');
 	L.push(`  when !knows ${R.yellowtail.spell}`);
 	L.push('  zone Tanaris');
-	L.push('  tip Gikkix sells the recipe on the Tanaris coast for 1g 60s.');
+	L.push('  tip Gikkix sells Recipe: Spotted Yellowtail on the Tanaris coast for 1g 60s. Buy it, then right-click it in your bags to learn it.');
 	L.push('  money 1g60s');
-	L.push(`  learn ${R.yellowtail.spell} nearest`);
+	L.push(`  buy ${R.yellowtail.book} x1 nearest`);
+	L.push(`  learn ${R.yellowtail.spell}`);
 
 	L.push('');
 	L.push('step Savage Coast Blue Sailfin');
@@ -466,12 +489,13 @@ function render(faction) {
 	L.push('  collect 16969 quest 6607.4');
 
 	L.push('');
-	L.push('step Filet of Redgill recipe');
+	L.push('step Buy Recipe: Filet of Redgill');
 	L.push(`  when !knows ${R.redgill.spell}`);
 	L.push('  zone Stranglethorn Vale');
-	L.push('  tip Kelsey Yance sells the recipe in Booty Bay for 1g 60s.');
+	L.push('  tip Kelsey Yance sells Recipe: Filet of Redgill in Booty Bay for 1g 60s. Buy it, then right-click it in your bags to learn it.');
 	L.push('  money 1g60s');
-	L.push(`  learn ${R.redgill.spell} nearest`);
+	L.push(`  buy ${R.redgill.book} x1 nearest`);
+	L.push(`  learn ${R.redgill.spell}`);
 
 	L.push('');
 	L.push('step Misty Reed Mahi Mahi');

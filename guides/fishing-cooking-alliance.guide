@@ -23,7 +23,7 @@ section Cooking 1-300
 
 step Get a Fishing Pole
   when !skill Fishing 1
-  tip You fish with a pole equipped. The arrow picks the nearest seller. Any fishing pole works; if you already have one, skip this step.
+  tip You fish with a pole equipped. The arrow picks the nearest seller, but its vendor list is from Classic and some trade suppliers on it have no pole on Forever: if yours has none, try a Fishing Supplies vendor (one usually stands near the fishing trainer). Any fishing pole works; if you already have one, skip this step.
   buy 6256 x1 nearest
 
 step Learn Fishing and Cooking
@@ -39,6 +39,13 @@ step Make Campfire Kits
   buy 4470 x10 nearest optional
   collect 279981 x10 anywhere
 
+step Buy Recipe: Brilliant Smallfish
+  when zone "Ironforge"
+  when !knows 7751
+  tip Recipe: Brilliant Smallfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6325 x1 nearest
+  learn 7751
+
 step Fishing 1-50: to Dun Morogh
   when zone "Ironforge"
   zone Dun Morogh
@@ -48,6 +55,13 @@ step Fishing 1-50: to Dun Morogh
   collect 6291 x50 anywhere optional
   craft 7751 until 50
   goto 35.48,40.22 "Iceflow Lake" r 25 optional
+
+step Buy Recipe: Brilliant Smallfish
+  when zone "Loch Modan"
+  when !knows 7751
+  tip Recipe: Brilliant Smallfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6325 x1 nearest
+  learn 7751
 
 step Fishing 1-50: to Dun Morogh
   when zone "Loch Modan"
@@ -59,6 +73,13 @@ step Fishing 1-50: to Dun Morogh
   craft 7751 until 50
   goto 35.48,40.22 "Iceflow Lake" r 25 optional
 
+step Buy Recipe: Brilliant Smallfish
+  when zone "Westfall"
+  when !knows 7751
+  tip Recipe: Brilliant Smallfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6325 x1 nearest
+  learn 7751
+
 step Fishing 1-50: to Elwynn Forest
   when zone "Westfall"
   zone Elwynn Forest
@@ -68,6 +89,13 @@ step Fishing 1-50: to Elwynn Forest
   collect 6291 x50 anywhere optional
   craft 7751 until 50
   goto 47.61,62.32 "Crystal Lake" r 25 optional
+
+step Buy Recipe: Slitherskin Mackerel
+  when zone "Darkshore"
+  when !knows 7752
+  tip Recipe: Slitherskin Mackerel is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6326 x1 nearest
+  learn 7752
 
 step Fishing 1-50: to Teldrassil
   when zone "Darkshore"
@@ -79,6 +107,13 @@ step Fishing 1-50: to Teldrassil
   craft 7752 until 50
   goto 55.88,93.51 "Rut'theran Village" r 25 optional
 
+step Buy Recipe: Slitherskin Mackerel
+  when zone "Darnassus"
+  when !knows 7752
+  tip Recipe: Slitherskin Mackerel is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6326 x1 nearest
+  learn 7752
+
 step Fishing 1-50: to Teldrassil
   when zone "Darnassus"
   zone Teldrassil
@@ -89,6 +124,13 @@ step Fishing 1-50: to Teldrassil
   craft 7752 until 50
   goto 55.88,93.51 "Rut'theran Village" r 25 optional
 
+step Buy Recipe: Brilliant Smallfish
+  when zone "Stormwind City"
+  when !knows 7751
+  tip Recipe: Brilliant Smallfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6325 x1 nearest
+  learn 7751
+
 step Fishing 1-50: to Elwynn Forest
   when zone "Stormwind City"
   zone Elwynn Forest
@@ -98,6 +140,22 @@ step Fishing 1-50: to Elwynn Forest
   collect 6291 x50 anywhere optional
   craft 7751 until 50
   goto 47.61,62.32 "Crystal Lake" r 25 optional
+
+step Buy Recipe: Brilliant Smallfish
+  when !zone "Elwynn Forest"
+  when !zone "Dun Morogh"
+  when !zone "Teldrassil"
+  when !zone "Zephras Isle"
+  when !zone "Ironforge"
+  when !zone "Loch Modan"
+  when !zone "Westfall"
+  when !zone "Darkshore"
+  when !zone "Darnassus"
+  when !zone "Stormwind City"
+  when !knows 7751
+  tip Recipe: Brilliant Smallfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6325 x1 nearest
+  learn 7751
 
 step Fishing 1-50: pick a water
   when !zone "Elwynn Forest"
@@ -118,6 +176,13 @@ step Fishing 1-50: pick a water
   craft 7751 until 50
   goto 47.61,62.32 "Crystal Lake" r 25 optional
 
+step Buy Recipe: Brilliant Smallfish
+  when zone "Elwynn Forest"
+  when !knows 7751
+  tip Recipe: Brilliant Smallfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6325 x1 nearest
+  learn 7751
+
 step Fishing 1-50: Elwynn Forest
   when zone "Elwynn Forest"
   zone Elwynn Forest
@@ -127,6 +192,13 @@ step Fishing 1-50: Elwynn Forest
   collect 6291 x50 anywhere optional
   craft 7751 until 50
   goto 47.61,62.32 "Crystal Lake" r 25 optional
+
+step Buy Recipe: Brilliant Smallfish
+  when zone "Dun Morogh"
+  when !knows 7751
+  tip Recipe: Brilliant Smallfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6325 x1 nearest
+  learn 7751
 
 step Fishing 1-50: Dun Morogh
   when zone "Dun Morogh"
@@ -138,6 +210,13 @@ step Fishing 1-50: Dun Morogh
   craft 7751 until 50
   goto 35.48,40.22 "Iceflow Lake" r 25 optional
 
+step Buy Recipe: Slitherskin Mackerel
+  when zone "Teldrassil"
+  when !knows 7752
+  tip Recipe: Slitherskin Mackerel is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6326 x1 nearest
+  learn 7752
+
 step Fishing 1-50: Teldrassil
   when zone "Teldrassil"
   zone Teldrassil
@@ -148,6 +227,13 @@ step Fishing 1-50: Teldrassil
   craft 7752 until 50
   goto 55.88,93.51 "Rut'theran Village" r 25 optional
 
+step Buy Recipe: Brilliant Smallfish
+  when zone "Zephras Isle"
+  when !knows 7751
+  tip Recipe: Brilliant Smallfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6325 x1 nearest
+  learn 7751
+
 step Fishing 1-50: Zephras Isle
   when zone "Zephras Isle"
   zone Zephras Isle
@@ -157,6 +243,12 @@ step Fishing 1-50: Zephras Isle
   collect 6291 x50 anywhere optional
   craft 7751 until 50
   goto 45.02,48.44 live "Zephras shore" r 25 optional
+
+step Buy Recipe: Brilliant Smallfish
+  when !knows 7751
+  tip Recipe: Brilliant Smallfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6325 x1 nearest
+  learn 7751
 
 step Fishing 1-50: anywhere
   zone Elwynn Forest
@@ -182,6 +274,13 @@ step Make Campfire Kits
   buy 4470 x10 nearest optional
   collect 279981 x10 anywhere
 
+step Buy Recipe: Rainbow Fin Albacore
+  when zone "Redridge Mountains"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
+
 step Fishing 50-125: to Westfall
   when zone "Redridge Mountains"
   zone Westfall
@@ -191,6 +290,13 @@ step Fishing 50-125: to Westfall
   collect 6361 x68 anywhere optional
   craft 7827 until 110
   goto 36.23,90.18 "Westfall coast" r 25 optional
+
+step Buy Recipe: Rainbow Fin Albacore
+  when zone "Stormwind City"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
 
 step Fishing 50-125: to Westfall
   when zone "Stormwind City"
@@ -202,6 +308,13 @@ step Fishing 50-125: to Westfall
   craft 7827 until 110
   goto 36.23,90.18 "Westfall coast" r 25 optional
 
+step Buy Recipe: Rainbow Fin Albacore
+  when zone "Elwynn Forest"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
+
 step Fishing 50-125: to Westfall
   when zone "Elwynn Forest"
   zone Westfall
@@ -211,6 +324,13 @@ step Fishing 50-125: to Westfall
   collect 6361 x68 anywhere optional
   craft 7827 until 110
   goto 36.23,90.18 "Westfall coast" r 25 optional
+
+step Buy Recipe: Rainbow Fin Albacore
+  when zone "Ironforge"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
 
 step Fishing 50-125: to Wetlands
   when zone "Ironforge"
@@ -222,6 +342,13 @@ step Fishing 50-125: to Wetlands
   craft 7827 until 110
   goto 8.02,58.35 "Menethil Harbor" r 25 optional
 
+step Buy Recipe: Rainbow Fin Albacore
+  when zone "Dun Morogh"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
+
 step Fishing 50-125: to Wetlands
   when zone "Dun Morogh"
   zone Wetlands
@@ -231,6 +358,13 @@ step Fishing 50-125: to Wetlands
   collect 6361 x68 anywhere optional
   craft 7827 until 110
   goto 8.02,58.35 "Menethil Harbor" r 25 optional
+
+step Buy Recipe: Rainbow Fin Albacore
+  when zone "Darnassus"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
 
 step Fishing 50-125: to Wetlands
   when zone "Darnassus"
@@ -242,6 +376,13 @@ step Fishing 50-125: to Wetlands
   craft 7827 until 110
   goto 8.02,58.35 "Menethil Harbor" r 25 optional
 
+step Buy Recipe: Rainbow Fin Albacore
+  when zone "Teldrassil"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
+
 step Fishing 50-125: to Wetlands
   when zone "Teldrassil"
   zone Wetlands
@@ -252,6 +393,13 @@ step Fishing 50-125: to Wetlands
   craft 7827 until 110
   goto 8.02,58.35 "Menethil Harbor" r 25 optional
 
+step Buy Recipe: Rainbow Fin Albacore
+  when zone "Darkshore"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
+
 step Fishing 50-125: to Wetlands
   when zone "Darkshore"
   zone Wetlands
@@ -261,6 +409,23 @@ step Fishing 50-125: to Wetlands
   collect 6361 x68 anywhere optional
   craft 7827 until 110
   goto 8.02,58.35 "Menethil Harbor" r 25 optional
+
+step Buy Recipe: Rainbow Fin Albacore
+  when !zone "Wetlands"
+  when !zone "Westfall"
+  when !zone "Loch Modan"
+  when !zone "Redridge Mountains"
+  when !zone "Stormwind City"
+  when !zone "Elwynn Forest"
+  when !zone "Ironforge"
+  when !zone "Dun Morogh"
+  when !zone "Darnassus"
+  when !zone "Teldrassil"
+  when !zone "Darkshore"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
 
 step Fishing 50-125: pick a water
   when !zone "Wetlands"
@@ -282,6 +447,13 @@ step Fishing 50-125: pick a water
   craft 7827 until 110
   goto 8.02,58.35 "Menethil Harbor" r 25 optional
 
+step Buy Recipe: Rainbow Fin Albacore
+  when zone "Wetlands"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
+
 step Fishing 50-125: Wetlands
   when zone "Wetlands"
   zone Wetlands
@@ -291,6 +463,13 @@ step Fishing 50-125: Wetlands
   collect 6361 x68 anywhere optional
   craft 7827 until 110
   goto 8.02,58.35 "Menethil Harbor" r 25 optional
+
+step Buy Recipe: Rainbow Fin Albacore
+  when zone "Westfall"
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
 
 step Fishing 50-125: Westfall
   when zone "Westfall"
@@ -302,6 +481,13 @@ step Fishing 50-125: Westfall
   craft 7827 until 110
   goto 36.23,90.18 "Westfall coast" r 25 optional
 
+step Buy Recipe: Longjaw Mud Snapper
+  when zone "Loch Modan"
+  when !knows 7753
+  tip Recipe: Longjaw Mud Snapper is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6328 x1 nearest
+  learn 7753
+
 step Fishing 50-125: Loch Modan
   when zone "Loch Modan"
   zone Loch Modan
@@ -311,6 +497,12 @@ step Fishing 50-125: Loch Modan
   collect 6289 x68 anywhere optional
   craft 7753 until 110
   goto 40.55,39.7 "The Loch" r 25 optional
+
+step Buy Recipe: Rainbow Fin Albacore
+  when !knows 7827
+  tip Recipe: Rainbow Fin Albacore is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6368 x1 nearest
+  learn 7827
 
 step Fishing 50-125: anywhere
   zone Wetlands
@@ -323,11 +515,16 @@ step Fishing 50-125: anywhere
 
 # ---- Fishing 125-150, Cooking 110-150
 
+step Buy Recipe: Bristle Whisker Catfish
+  when !knows 7755
+  tip Recipe: Bristle Whisker Catfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6330 x1 nearest
+  learn 7755
+
 step Fishing 125-150: to Redridge Mountains
   when zone "Wetlands"
   zone Redridge Mountains
-  tip The nearest good water for this range from Wetlands is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip The nearest good water for this range from Wetlands is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -337,8 +534,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Redridge Mountains
   when zone "Stormwind City"
   zone Redridge Mountains
-  tip The nearest good water for this range from Stormwind City is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip The nearest good water for this range from Stormwind City is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -348,8 +544,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Redridge Mountains
   when zone "Elwynn Forest"
   zone Redridge Mountains
-  tip The nearest good water for this range from Elwynn Forest is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip The nearest good water for this range from Elwynn Forest is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -359,8 +554,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Redridge Mountains
   when zone "Westfall"
   zone Redridge Mountains
-  tip The nearest good water for this range from Westfall is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip The nearest good water for this range from Westfall is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -370,8 +564,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Redridge Mountains
   when zone "Ironforge"
   zone Redridge Mountains
-  tip The nearest good water for this range from Ironforge is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip The nearest good water for this range from Ironforge is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -381,8 +574,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Redridge Mountains
   when zone "Loch Modan"
   zone Redridge Mountains
-  tip The nearest good water for this range from Loch Modan is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip The nearest good water for this range from Loch Modan is Redridge Mountains: the lake at Lakeshire. About 63% of catches there are Raw Bristle Whisker Catfish. Ashenvale works too: go there instead and the guide follows you. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -392,8 +584,7 @@ step Fishing 125-150: to Redridge Mountains
 step Fishing 125-150: to Ashenvale
   when zone "Darnassus"
   zone Ashenvale
-  tip The nearest good water for this range from Darnassus is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Redridge Mountains works too: go there instead and the guide follows you.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip The nearest good water for this range from Darnassus is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Redridge Mountains works too: go there instead and the guide follows you. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -403,8 +594,7 @@ step Fishing 125-150: to Ashenvale
 step Fishing 125-150: to Ashenvale
   when zone "Darkshore"
   zone Ashenvale
-  tip The nearest good water for this range from Darkshore is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Redridge Mountains works too: go there instead and the guide follows you.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip The nearest good water for this range from Darkshore is Ashenvale: the lake around Astranaar. About 63% of catches there are Raw Bristle Whisker Catfish. Redridge Mountains works too: go there instead and the guide follows you. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -423,8 +613,7 @@ step Fishing 125-150: pick a water
   when !zone "Darnassus"
   when !zone "Darkshore"
   zone Redridge Mountains
-  tip Fish in any of Redridge Mountains, Ashenvale. The arrow points at Redridge Mountains; go to whichever is closer and the guide switches to that zone's step when you arrive.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip Fish in any of Redridge Mountains, Ashenvale. The arrow points at Redridge Mountains; go to whichever is closer and the guide switches to that zone's step when you arrive. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -434,8 +623,7 @@ step Fishing 125-150: pick a water
 step Fishing 125-150: Redridge Mountains
   when zone "Redridge Mountains"
   zone Redridge Mountains
-  tip If you don't know Bristle Whisker Catfish yet, the arrow first takes you to its nearest seller. Fish the lake at Lakeshire until Fishing 150 and cook what you catch as you go until Cooking 150: about 63% of catches are Raw Bristle Whisker Catfish, so cook Bristle Whisker Catfish. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Bristle Whisker Catfish line counts the fish you still need for Cooking 150 (about 42 from Cooking 110) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 70 casts here, about 20 minutes.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip If you don't know Bristle Whisker Catfish yet, the arrow first takes you to its nearest seller. Fish the lake at Lakeshire until Fishing 150 and cook what you catch as you go until Cooking 150: about 63% of catches are Raw Bristle Whisker Catfish, so cook Bristle Whisker Catfish. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Bristle Whisker Catfish line counts the fish you still need for Cooking 150 (about 42 from Cooking 110) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 70 casts here, about 20 minutes. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -445,8 +633,7 @@ step Fishing 125-150: Redridge Mountains
 step Fishing 125-150: Ashenvale
   when zone "Ashenvale"
   zone Ashenvale
-  tip If you don't know Bristle Whisker Catfish yet, the arrow first takes you to its nearest seller. Fish the lake around Astranaar until Fishing 150 and cook what you catch as you go until Cooking 150: about 63% of catches are Raw Bristle Whisker Catfish, so cook Bristle Whisker Catfish. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Bristle Whisker Catfish line counts the fish you still need for Cooking 150 (about 42 from Cooking 110) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 70 casts here, about 20 minutes.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip If you don't know Bristle Whisker Catfish yet, the arrow first takes you to its nearest seller. Fish the lake around Astranaar until Fishing 150 and cook what you catch as you go until Cooking 150: about 63% of catches are Raw Bristle Whisker Catfish, so cook Bristle Whisker Catfish. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Bristle Whisker Catfish line counts the fish you still need for Cooking 150 (about 42 from Cooking 110) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 70 casts here, about 20 minutes. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -455,8 +642,7 @@ step Fishing 125-150: Ashenvale
 
 step Fishing 125-150: anywhere
   zone Redridge Mountains
-  tip Keep going at any of Redridge Mountains, Ashenvale; the arrow points at Redridge Mountains.
-  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
+  tip Keep going at any of Redridge Mountains, Ashenvale; the arrow points at Redridge Mountains. Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -479,6 +665,12 @@ step Expert Cooking
   money 1g
   train Cooking Expert
   buy 6530 x5 nearest optional
+
+step Buy Recipe: Bristle Whisker Catfish
+  when !knows 7755
+  tip Recipe: Bristle Whisker Catfish is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6330 x1 nearest
+  learn 7755
 
 step Fishing 150-175: to Redridge Mountains
   when zone "Wetlands"
@@ -610,93 +802,159 @@ step Fishing 150-175: anywhere
 
 # ---- Fishing 175-225, Cooking 175-225
 
+step Buy Recipe: Mithril Headed Trout
+  when zone "Stormwind City"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
+
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Stormwind City"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Stormwind City is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip The nearest good water for this range from Stormwind City is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
   craft 20916 until 225
   goto 58.7,17.2 "North coast" r 25 optional
+
+step Buy Recipe: Mithril Headed Trout
+  when zone "Ironforge"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
 
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Ironforge"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Ironforge is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip The nearest good water for this range from Ironforge is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
   craft 20916 until 225
   goto 58.7,17.2 "North coast" r 25 optional
+
+step Buy Recipe: Mithril Headed Trout
+  when zone "Loch Modan"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
 
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Loch Modan"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Loch Modan is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip The nearest good water for this range from Loch Modan is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
   craft 20916 until 225
   goto 58.7,17.2 "North coast" r 25 optional
+
+step Buy Recipe: Mithril Headed Trout
+  when zone "Wetlands"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
 
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Wetlands"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Wetlands is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Take the boat from Menethil Harbor to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip The nearest good water for this range from Wetlands is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Take the boat from Menethil Harbor to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
   craft 20916 until 225
   goto 58.7,17.2 "North coast" r 25 optional
+
+step Buy Recipe: Mithril Headed Trout
+  when zone "Redridge Mountains"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
 
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Redridge Mountains"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Redridge Mountains is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip The nearest good water for this range from Redridge Mountains is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. Fly to Menethil Harbor and take the boat to Theramore. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
   craft 20916 until 225
   goto 58.7,17.2 "North coast" r 25 optional
+
+step Buy Recipe: Mithril Headed Trout
+  when zone "Darnassus"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
 
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Darnassus"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Darnassus is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip The nearest good water for this range from Darnassus is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
   craft 20916 until 225
   goto 58.7,17.2 "North coast" r 25 optional
+
+step Buy Recipe: Mithril Headed Trout
+  when zone "Ashenvale"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
 
 step Fishing 175-225: to Dustwallow Marsh
   when zone "Ashenvale"
   zone Dustwallow Marsh
-  tip The nearest good water for this range from Ashenvale is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip The nearest good water for this range from Ashenvale is Dustwallow Marsh: the north coast of the marsh, away from Theramore Isle. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
   craft 20916 until 225
   goto 58.7,17.2 "North coast" r 25 optional
 
+step Buy Recipe: Mithril Headed Trout
+  when zone "Hillsbrad Foothills"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
+
 step Fishing 175-225: to Alterac Mountains
   when zone "Hillsbrad Foothills"
   zone Alterac Mountains
-  tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Stranglethorn Vale, Arathi Highlands works too: go there instead and the guide follows you. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
   craft 20916 until 225
   goto 30.4,35.2 "Alterac lake" r 25 optional
+
+step Buy Recipe: Mithril Headed Trout
+  when !zone "Dustwallow Marsh"
+  when !zone "Alterac Mountains"
+  when !zone "Stranglethorn Vale"
+  when !zone "Arathi Highlands"
+  when !zone "Stormwind City"
+  when !zone "Ironforge"
+  when !zone "Loch Modan"
+  when !zone "Wetlands"
+  when !zone "Redridge Mountains"
+  when !zone "Darnassus"
+  when !zone "Ashenvale"
+  when !zone "Hillsbrad Foothills"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
 
 step Fishing 175-225: pick a water
   when !zone "Dustwallow Marsh"
@@ -712,19 +970,24 @@ step Fishing 175-225: pick a water
   when !zone "Ashenvale"
   when !zone "Hillsbrad Foothills"
   zone Dustwallow Marsh
-  tip Fish in any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands. The arrow points at Dustwallow Marsh; go to whichever is closer and the guide switches to that zone's step when you arrive.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip Fish in any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands. The arrow points at Dustwallow Marsh; go to whichever is closer and the guide switches to that zone's step when you arrive. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
   craft 20916 until 225
   goto 58.7,17.2 "North coast" r 25 optional
 
+step Buy Recipe: Mithril Headed Trout
+  when zone "Dustwallow Marsh"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
+
 step Fishing 175-225: Dustwallow Marsh
   when zone "Dustwallow Marsh"
   zone Dustwallow Marsh
-  tip If you don't know Mithril Headed Trout yet, the arrow first takes you to its nearest seller. Fish the north coast of the marsh, away from Theramore Isle until Fishing 225 and cook what you catch as you go until Cooking 225: about 58% of catches are Raw Mithril Head Trout, so cook Mithril Headed Trout. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Mithril Head Trout line counts the fish you still need for Cooking 225 (about 52 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 90 casts here, about 30 minutes. The Theramore docks (the sea around Theramore) gives Raw Rockscale Cod.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip If you don't know Mithril Headed Trout yet, the arrow first takes you to its nearest seller. Fish the north coast of the marsh, away from Theramore Isle until Fishing 225 and cook what you catch as you go until Cooking 225: about 58% of catches are Raw Mithril Head Trout, so cook Mithril Headed Trout. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Mithril Head Trout line counts the fish you still need for Cooking 225 (about 52 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 90 casts here, about 30 minutes. The Theramore docks (the sea around Theramore) gives Raw Rockscale Cod. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -732,43 +995,66 @@ step Fishing 175-225: Dustwallow Marsh
   goto 58.7,17.2 "North coast" r 25 optional
   goto 66.9,45.25 "Theramore docks" r 25 optional
 
+step Buy Recipe: Mithril Headed Trout
+  when zone "Alterac Mountains"
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
+
 step Fishing 175-225: Alterac Mountains
   when zone "Alterac Mountains"
   zone Alterac Mountains
-  tip If you don't know Mithril Headed Trout yet, the arrow first takes you to its nearest seller. Fish the lake by the ruins of Alterac until Fishing 225 and cook what you catch as you go until Cooking 225: about 58% of catches are Raw Mithril Head Trout, so cook Mithril Headed Trout. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Mithril Head Trout line counts the fish you still need for Cooking 225 (about 52 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 90 casts here, about 30 minutes.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip If you don't know Mithril Headed Trout yet, the arrow first takes you to its nearest seller. Fish the lake by the ruins of Alterac until Fishing 225 and cook what you catch as you go until Cooking 225: about 58% of catches are Raw Mithril Head Trout, so cook Mithril Headed Trout. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Mithril Head Trout line counts the fish you still need for Cooking 225 (about 52 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 90 casts here, about 30 minutes. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
   craft 20916 until 225
   goto 30.4,35.2 "Alterac lake" r 25 optional
 
+step Buy Recipe: Rockscale Cod
+  when zone "Stranglethorn Vale"
+  when !knows 7828
+  tip Recipe: Rockscale Cod is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6369 x1 nearest
+  learn 7828
+
 step Fishing 175-225: Stranglethorn Vale
   when zone "Stranglethorn Vale"
   zone Stranglethorn Vale
-  tip If you don't know Rockscale Cod yet, the arrow first takes you to its nearest seller. Fish the bay under Booty Bay until Fishing 225 and cook what you catch as you go until Cooking 225: about 55% of catches are Raw Rockscale Cod, so cook Rockscale Cod. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Rockscale Cod line counts the fish you still need for Cooking 225 (about 95 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 180 casts here, about 55 minutes. Away from this coast, Stranglethorn Vale's inland water gives Raw Mithril Head Trout (about 58% of catches), and Cooking 175-225 takes only about 52 of those: learn Mithril Headed Trout and fish there if you know a spot.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip If you don't know Rockscale Cod yet, the arrow first takes you to its nearest seller. Fish the bay under Booty Bay until Fishing 225 and cook what you catch as you go until Cooking 225: about 55% of catches are Raw Rockscale Cod, so cook Rockscale Cod. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Rockscale Cod line counts the fish you still need for Cooking 225 (about 95 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 180 casts here, about 55 minutes. Away from this coast, Stranglethorn Vale's inland water gives Raw Mithril Head Trout (about 58% of catches), and Cooking 175-225 takes only about 52 of those: learn Mithril Headed Trout and fish there if you know a spot. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 7828 nearest
   skill Fishing 225
   collect 6362 x95 anywhere optional
   craft 7828 until 225
   goto 27.42,77.16 "Booty Bay docks" r 25 optional
 
+step Buy Recipe: Rockscale Cod
+  when zone "Arathi Highlands"
+  when !knows 7828
+  tip Recipe: Rockscale Cod is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 6369 x1 nearest
+  learn 7828
+
 step Fishing 175-225: Arathi Highlands
   when zone "Arathi Highlands"
   zone Arathi Highlands
-  tip If you don't know Rockscale Cod yet, the arrow first takes you to its nearest seller. Fish the cove on the south-west coast until Fishing 225 and cook what you catch as you go until Cooking 225: about 55% of catches are Raw Rockscale Cod, so cook Rockscale Cod. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Rockscale Cod line counts the fish you still need for Cooking 225 (about 95 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 180 casts here, about 55 minutes. Away from this coast, Arathi Highlands's inland water gives Raw Mithril Head Trout (about 58% of catches), and Cooking 175-225 takes only about 52 of those: learn Mithril Headed Trout and fish there if you know a spot.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip If you don't know Rockscale Cod yet, the arrow first takes you to its nearest seller. Fish the cove on the south-west coast until Fishing 225 and cook what you catch as you go until Cooking 225: about 55% of catches are Raw Rockscale Cod, so cook Rockscale Cod. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Rockscale Cod line counts the fish you still need for Cooking 225 (about 95 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 180 casts here, about 55 minutes. Away from this coast, Arathi Highlands's inland water gives Raw Mithril Head Trout (about 58% of catches), and Cooking 175-225 takes only about 52 of those: learn Mithril Headed Trout and fish there if you know a spot. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 7828 nearest
   skill Fishing 225
   collect 6362 x95 anywhere optional
   craft 7828 until 225
   goto 27.8,85.4 "Faldir's Cove" r 25 optional
 
+step Buy Recipe: Mithril Headed Trout
+  when !knows 20916
+  tip Recipe: Mithril Headed Trout is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 17062 x1 nearest
+  learn 20916
+
 step Fishing 175-225: anywhere
   zone Dustwallow Marsh
-  tip Keep going at any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands; the arrow points at Dustwallow Marsh.
-  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
+  tip Keep going at any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Arathi Highlands; the arrow points at Dustwallow Marsh. Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -816,24 +1102,26 @@ step Clamlette Surprise
   accept 6610
   turnin 6610
 
-step Spotted Yellowtail recipe
+step Buy Recipe: Spotted Yellowtail
   when !knows 18238
   zone Tanaris
-  tip Gikkix sells the recipe on the Tanaris coast for 1g 60s.
+  tip Gikkix sells Recipe: Spotted Yellowtail on the Tanaris coast for 1g 60s. Buy it, then right-click it in your bags to learn it.
   money 1g60s
-  learn 18238 nearest
+  buy 13939 x1 nearest
+  learn 18238
 
 step Savage Coast Blue Sailfin
   zone Stranglethorn Vale
   tip Take the boat from Ratchet to Booty Bay and fish the Savage Coast, the west shore of Stranglethorn, until a Savage Coast Blue Sailfin comes up. Buy Filet of Redgill from Kelsey Yance in Booty Bay: Redgill is the best fish for the last stretch to 300.
   collect 16969 quest 6607.4
 
-step Filet of Redgill recipe
+step Buy Recipe: Filet of Redgill
   when !knows 18241
   zone Stranglethorn Vale
-  tip Kelsey Yance sells the recipe in Booty Bay for 1g 60s.
+  tip Kelsey Yance sells Recipe: Filet of Redgill in Booty Bay for 1g 60s. Buy it, then right-click it in your bags to learn it.
   money 1g60s
-  learn 18241 nearest
+  buy 13941 x1 nearest
+  learn 18241
 
 step Misty Reed Mahi Mahi
   zone Swamp of Sorrows
@@ -845,6 +1133,13 @@ step Back to Nat Pagle
   tip Hand Nat his four fish for Artisan Fishing.
   turnin 6607
 
+step Buy Recipe: Filet of Redgill
+  when zone "Dustwallow Marsh"
+  when !knows 18241
+  tip Recipe: Filet of Redgill is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 13941 x1 nearest
+  learn 18241
+
 step Fishing 225-300: to Azshara
   when zone "Dustwallow Marsh"
   zone Azshara
@@ -854,6 +1149,13 @@ step Fishing 225-300: to Azshara
   collect 13758 x120 anywhere optional
   craft 18241 until 300
   goto 51.6,53.6 "Azshara coast" r 25 optional
+
+step Buy Recipe: Filet of Redgill
+  when zone "Stormwind City"
+  when !knows 18241
+  tip Recipe: Filet of Redgill is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 13941 x1 nearest
+  learn 18241
 
 step Fishing 225-300: to Azshara
   when zone "Stormwind City"
@@ -865,6 +1167,13 @@ step Fishing 225-300: to Azshara
   craft 18241 until 300
   goto 51.6,53.6 "Azshara coast" r 25 optional
 
+step Buy Recipe: Filet of Redgill
+  when zone "Ironforge"
+  when !knows 18241
+  tip Recipe: Filet of Redgill is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 13941 x1 nearest
+  learn 18241
+
 step Fishing 225-300: to Azshara
   when zone "Ironforge"
   zone Azshara
@@ -874,6 +1183,13 @@ step Fishing 225-300: to Azshara
   collect 13758 x120 anywhere optional
   craft 18241 until 300
   goto 51.6,53.6 "Azshara coast" r 25 optional
+
+step Buy Recipe: Filet of Redgill
+  when zone "Darnassus"
+  when !knows 18241
+  tip Recipe: Filet of Redgill is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 13941 x1 nearest
+  learn 18241
 
 step Fishing 225-300: to Azshara
   when zone "Darnassus"
@@ -885,6 +1201,13 @@ step Fishing 225-300: to Azshara
   craft 18241 until 300
   goto 51.6,53.6 "Azshara coast" r 25 optional
 
+step Buy Recipe: Filet of Redgill
+  when zone "Feralas"
+  when !knows 18241
+  tip Recipe: Filet of Redgill is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 13941 x1 nearest
+  learn 18241
+
 step Fishing 225-300: to Azshara
   when zone "Feralas"
   zone Azshara
@@ -895,6 +1218,13 @@ step Fishing 225-300: to Azshara
   craft 18241 until 300
   goto 51.6,53.6 "Azshara coast" r 25 optional
 
+step Buy Recipe: Filet of Redgill
+  when zone "Stranglethorn Vale"
+  when !knows 18241
+  tip Recipe: Filet of Redgill is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 13941 x1 nearest
+  learn 18241
+
 step Fishing 225-300: to Azshara
   when zone "Stranglethorn Vale"
   zone Azshara
@@ -904,6 +1234,20 @@ step Fishing 225-300: to Azshara
   collect 13758 x120 anywhere optional
   craft 18241 until 300
   goto 51.6,53.6 "Azshara coast" r 25 optional
+
+step Buy Recipe: Filet of Redgill
+  when !zone "Azshara"
+  when !zone "Tanaris"
+  when !zone "Dustwallow Marsh"
+  when !zone "Stormwind City"
+  when !zone "Ironforge"
+  when !zone "Darnassus"
+  when !zone "Feralas"
+  when !zone "Stranglethorn Vale"
+  when !knows 18241
+  tip Recipe: Filet of Redgill is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 13941 x1 nearest
+  learn 18241
 
 step Fishing 225-300: pick a water
   when !zone "Azshara"
@@ -922,6 +1266,13 @@ step Fishing 225-300: pick a water
   craft 18241 until 300
   goto 51.6,53.6 "Azshara coast" r 25 optional
 
+step Buy Recipe: Filet of Redgill
+  when zone "Azshara"
+  when !knows 18241
+  tip Recipe: Filet of Redgill is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 13941 x1 nearest
+  learn 18241
+
 step Fishing 225-300: Azshara
   when zone "Azshara"
   zone Azshara
@@ -932,6 +1283,13 @@ step Fishing 225-300: Azshara
   craft 18241 until 300
   goto 51.6,53.6 "Azshara coast" r 25 optional
 
+step Buy Recipe: Spotted Yellowtail
+  when zone "Tanaris"
+  when !knows 18238
+  tip Recipe: Spotted Yellowtail is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 13939 x1 nearest
+  learn 18238
+
 step Fishing 225-300: Tanaris
   when zone "Tanaris"
   zone Tanaris
@@ -941,6 +1299,12 @@ step Fishing 225-300: Tanaris
   collect 4603 x120 anywhere optional
   craft 18238 until 300
   goto 68.6,23 "Steamwheedle coast" r 25 optional
+
+step Buy Recipe: Filet of Redgill
+  when !knows 18241
+  tip Recipe: Filet of Redgill is an item a vendor sells, usually the fishing supplier. The arrow points at the nearest seller: buy it, then right-click it in your bags to learn it.
+  buy 13941 x1 nearest
+  learn 18241
 
 step Fishing 225-300: anywhere
   zone Azshara
