@@ -284,6 +284,7 @@ step Fishing 125-150: to Stonetalon Mountains
   when zone "Orgrimmar"
   zone Stonetalon Mountains
   tip The nearest good water for this range from Orgrimmar is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -294,6 +295,7 @@ step Fishing 125-150: to Stonetalon Mountains
   when zone "The Barrens"
   zone Stonetalon Mountains
   tip The nearest good water for this range from The Barrens is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -304,6 +306,7 @@ step Fishing 125-150: to Stonetalon Mountains
   when zone "Thunder Bluff"
   zone Stonetalon Mountains
   tip The nearest good water for this range from Thunder Bluff is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -314,6 +317,7 @@ step Fishing 125-150: to Stonetalon Mountains
   when zone "Mulgore"
   zone Stonetalon Mountains
   tip The nearest good water for this range from Mulgore is Stonetalon Mountains: the lake in the middle of the zone. About 63% of catches there are Raw Bristle Whisker Catfish. Any of Ashenvale, Alterac Mountains works too: go there instead and the guide follows you.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -324,6 +328,7 @@ step Fishing 125-150: to Alterac Mountains
   when zone "Undercity"
   zone Alterac Mountains
   tip The nearest good water for this range from Undercity is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale works too: go there instead and the guide follows you.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -334,6 +339,7 @@ step Fishing 125-150: to Alterac Mountains
   when zone "Silverpine Forest"
   zone Alterac Mountains
   tip The nearest good water for this range from Silverpine Forest is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale works too: go there instead and the guide follows you.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -344,6 +350,7 @@ step Fishing 125-150: to Alterac Mountains
   when zone "Hillsbrad Foothills"
   zone Alterac Mountains
   tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 40% of catches there are Raw Bristle Whisker Catfish. Any of Stonetalon Mountains, Ashenvale works too: go there instead and the guide follows you.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -363,6 +370,7 @@ step Fishing 125-150: pick a water
   when !zone "Hillsbrad Foothills"
   zone Stonetalon Mountains
   tip Fish in any of Stonetalon Mountains, Ashenvale, Alterac Mountains. The arrow points at Stonetalon Mountains; go to whichever is closer and the guide switches to that zone's step when you arrive.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -373,6 +381,7 @@ step Fishing 125-150: Stonetalon Mountains
   when zone "Stonetalon Mountains"
   zone Stonetalon Mountains
   tip If you don't know Bristle Whisker Catfish yet, the arrow first takes you to its nearest seller. Fish the lake in the middle of the zone until Fishing 150 and cook what you catch as you go until Cooking 150: about 63% of catches are Raw Bristle Whisker Catfish, so cook Bristle Whisker Catfish. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Bristle Whisker Catfish line counts the fish you still need for Cooking 150 (about 42 from Cooking 110) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 70 casts here, about 20 minutes.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -383,6 +392,7 @@ step Fishing 125-150: Ashenvale
   when zone "Ashenvale"
   zone Ashenvale
   tip If you don't know Bristle Whisker Catfish yet, the arrow first takes you to its nearest seller. Fish the river south of Raynewood until Fishing 150 and cook what you catch as you go until Cooking 150: about 63% of catches are Raw Bristle Whisker Catfish, so cook Bristle Whisker Catfish. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Bristle Whisker Catfish line counts the fish you still need for Cooking 150 (about 42 from Cooking 110) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 70 casts here, about 20 minutes.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -393,6 +403,7 @@ step Fishing 125-150: Alterac Mountains
   when zone "Alterac Mountains"
   zone Alterac Mountains
   tip If you don't know Bristle Whisker Catfish yet, the arrow first takes you to its nearest seller. Fish the lake by the ruins of Alterac until Fishing 150 and cook what you catch as you go until Cooking 150: about 40% of catches are Raw Bristle Whisker Catfish, so cook Bristle Whisker Catfish. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Bristle Whisker Catfish line counts the fish you still need for Cooking 150 (about 42 from Cooking 110) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 110 casts here, about 35 minutes.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -402,6 +413,7 @@ step Fishing 125-150: Alterac Mountains
 step Fishing 125-150: anywhere
   zone Stonetalon Mountains
   tip Keep going at any of Stonetalon Mountains, Ashenvale, Alterac Mountains; the arrow points at Stonetalon Mountains.
+  note Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.
   learn 7755 nearest
   skill Fishing 150
   collect 6308 x42 anywhere optional
@@ -410,10 +422,18 @@ step Fishing 125-150: anywhere
 
 # ---- Fishing 150-175, Cooking 150-175
 
-step Expert Fishing and Cooking
-  tip Both are books, not trainer ranks, and both lift the cap to 225. Expert Fishing - The Bass and You is sold only by Old Man Heming on the docks of Booty Bay; the Expert Cookbook has its own sellers and the arrow picks the nearest. Buy each and read it. Both need character level 20.
+step Expert Fishing
+  when !knows 7732
+  tip Expert Fishing is a book, not a trainer rank, and lifts the cap to 225. Expert Fishing - The Bass and You is sold only by Old Man Heming on the docks of Booty Bay, for 1g. Buy it and read it. It needs character level 20.
   level 20
+  money 1g
   train Fishing Expert
+
+step Expert Cooking
+  when !knows 3413
+  tip The Expert Cookbook lifts Cooking to 225. It has its own sellers, 1g each; the arrow picks the nearest. Buy it and read it. It needs character level 20.
+  level 20
+  money 1g
   train Cooking Expert
   buy 6530 x5 nearest optional
 
@@ -551,6 +571,7 @@ step Fishing 175-225: to Dustwallow Marsh
   when zone "Orgrimmar"
   zone Dustwallow Marsh
   tip The nearest good water for this range from Orgrimmar is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -561,6 +582,7 @@ step Fishing 175-225: to Dustwallow Marsh
   when zone "The Barrens"
   zone Dustwallow Marsh
   tip The nearest good water for this range from The Barrens is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -571,6 +593,7 @@ step Fishing 175-225: to Dustwallow Marsh
   when zone "Durotar"
   zone Dustwallow Marsh
   tip The nearest good water for this range from Durotar is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -581,6 +604,7 @@ step Fishing 175-225: to Dustwallow Marsh
   when zone "Thunder Bluff"
   zone Dustwallow Marsh
   tip The nearest good water for this range from Thunder Bluff is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -591,6 +615,7 @@ step Fishing 175-225: to Dustwallow Marsh
   when zone "Stonetalon Mountains"
   zone Dustwallow Marsh
   tip The nearest good water for this range from Stonetalon Mountains is Dustwallow Marsh: the north coast of the marsh. About 58% of catches there are Raw Mithril Head Trout. Any of Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -601,6 +626,7 @@ step Fishing 175-225: to Alterac Mountains
   when zone "Undercity"
   zone Alterac Mountains
   tip The nearest good water for this range from Undercity is Alterac Mountains: the lake by the ruins of Alterac. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -611,6 +637,7 @@ step Fishing 175-225: to Alterac Mountains
   when zone "Hillsbrad Foothills"
   zone Alterac Mountains
   tip The nearest good water for this range from Hillsbrad Foothills is Alterac Mountains: the lake by the ruins of Alterac. About 58% of catches there are Raw Mithril Head Trout. Any of Dustwallow Marsh, Stranglethorn Vale, Desolace, Arathi Highlands works too: go there instead and the guide follows you.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -632,6 +659,7 @@ step Fishing 175-225: pick a water
   when !zone "Hillsbrad Foothills"
   zone Dustwallow Marsh
   tip Fish in any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands. The arrow points at Dustwallow Marsh; go to whichever is closer and the guide switches to that zone's step when you arrive.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -642,6 +670,7 @@ step Fishing 175-225: Dustwallow Marsh
   when zone "Dustwallow Marsh"
   zone Dustwallow Marsh
   tip If you don't know Mithril Headed Trout yet, the arrow first takes you to its nearest seller. Fish the north coast of the marsh until Fishing 225 and cook what you catch as you go until Cooking 225: about 58% of catches are Raw Mithril Head Trout, so cook Mithril Headed Trout. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Mithril Head Trout line counts the fish you still need for Cooking 225 (about 52 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 90 casts here, about 30 minutes.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -652,6 +681,7 @@ step Fishing 175-225: Alterac Mountains
   when zone "Alterac Mountains"
   zone Alterac Mountains
   tip If you don't know Mithril Headed Trout yet, the arrow first takes you to its nearest seller. Fish the lake by the ruins of Alterac until Fishing 225 and cook what you catch as you go until Cooking 225: about 58% of catches are Raw Mithril Head Trout, so cook Mithril Headed Trout. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Mithril Head Trout line counts the fish you still need for Cooking 225 (about 52 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 90 casts here, about 30 minutes.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -662,6 +692,7 @@ step Fishing 175-225: Stranglethorn Vale
   when zone "Stranglethorn Vale"
   zone Stranglethorn Vale
   tip If you don't know Rockscale Cod yet, the arrow first takes you to its nearest seller. Fish the bay under Booty Bay until Fishing 225 and cook what you catch as you go until Cooking 225: about 55% of catches are Raw Rockscale Cod, so cook Rockscale Cod. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Rockscale Cod line counts the fish you still need for Cooking 225 (about 95 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 180 casts here, about 55 minutes. Away from this coast, Stranglethorn Vale's inland water gives Raw Mithril Head Trout (about 58% of catches), and Cooking 175-225 takes only about 52 of those: learn Mithril Headed Trout and fish there if you know a spot.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 7828 nearest
   skill Fishing 225
   collect 6362 x95 anywhere optional
@@ -672,6 +703,7 @@ step Fishing 175-225: Desolace
   when zone "Desolace"
   zone Desolace
   tip If you don't know Rockscale Cod yet, the arrow first takes you to its nearest seller. Fish the sea at Shadowprey Village, where Wulan sells both recipes until Fishing 225 and cook what you catch as you go until Cooking 225: about 55% of catches are Raw Rockscale Cod, so cook Rockscale Cod. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Rockscale Cod line counts the fish you still need for Cooking 225 (about 95 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 180 casts here, about 55 minutes. Away from this coast, Desolace's inland water gives Raw Mithril Head Trout (about 58% of catches), and Cooking 175-225 takes only about 52 of those: learn Mithril Headed Trout and fish there if you know a spot.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 7828 nearest
   skill Fishing 225
   collect 6362 x95 anywhere optional
@@ -682,6 +714,7 @@ step Fishing 175-225: Arathi Highlands
   when zone "Arathi Highlands"
   zone Arathi Highlands
   tip If you don't know Rockscale Cod yet, the arrow first takes you to its nearest seller. Fish the cove on the south-west coast until Fishing 225 and cook what you catch as you go until Cooking 225: about 55% of catches are Raw Rockscale Cod, so cook Rockscale Cod. Place a Basic Campfire Kit beside the water (one every 5 minutes) and empty your bags into the fire; any fish recipe you know counts toward the Cooking target. The Raw Rockscale Cod line counts the fish you still need for Cooking 225 (about 95 from Cooking 175) and drops as your Cooking rises; once your bags hold that many, stop fishing and cook. That is roughly 180 casts here, about 55 minutes. Away from this coast, Arathi Highlands's inland water gives Raw Mithril Head Trout (about 58% of catches), and Cooking 175-225 takes only about 52 of those: learn Mithril Headed Trout and fish there if you know a spot.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 7828 nearest
   skill Fishing 225
   collect 6362 x95 anywhere optional
@@ -691,6 +724,7 @@ step Fishing 175-225: Arathi Highlands
 step Fishing 175-225: anywhere
   zone Dustwallow Marsh
   tip Keep going at any of Dustwallow Marsh, Alterac Mountains, Stranglethorn Vale, Desolace, Arathi Highlands; the arrow points at Dustwallow Marsh.
+  note Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.
   learn 20916 nearest
   skill Fishing 225
   collect 8365 x52 anywhere optional
@@ -737,12 +771,24 @@ step Clamlette Surprise
   turnin 6611
   accept 6610
   turnin 6610
+
+step Spotted Yellowtail recipe
+  when !knows 18238
+  zone Tanaris
+  tip Gikkix sells the recipe on the Tanaris coast for 1g 60s.
+  money 1g60s
   learn 18238 nearest
 
 step Savage Coast Blue Sailfin
   zone Stranglethorn Vale
   tip Take the boat from Ratchet to Booty Bay and fish the Savage Coast, the west shore of Stranglethorn, until a Savage Coast Blue Sailfin comes up. Buy Filet of Redgill from Kelsey Yance in Booty Bay: Redgill is the best fish for the last stretch to 300.
   collect 16969 quest 6607.4
+
+step Filet of Redgill recipe
+  when !knows 18241
+  zone Stranglethorn Vale
+  tip Kelsey Yance sells the recipe in Booty Bay for 1g 60s.
+  money 1g60s
   learn 18241 nearest
 
 step Misty Reed Mahi Mahi

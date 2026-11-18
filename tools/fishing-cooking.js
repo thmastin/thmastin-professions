@@ -25,9 +25,9 @@ const W = (zone, x, y, f, label, recipe, note, area) => ({ zone, x, y, f, label,
 const BANDS = {
 	A: { fish: [1, 50], cook: [1, 50] },
 	B: { fish: [50, 125], cook: [50, 110] },
-	C: { fish: [125, 150], cook: [110, 150] },
+	C: { fish: [125, 150], cook: [110, 150], note: 'Save 2g for Fishing 150: the Expert Fishing book and the Expert Cookbook cost 1g each.' },
 	D: { fish: [150, 175], cook: [150, 175] },
-	E: { fish: [175, 225], cook: [175, 225] },
+	E: { fish: [175, 225], cook: [175, 225], note: 'Save about 3g 20s for Fishing 225: the Spotted Yellowtail and Filet of Redgill recipes cost 1g 60s each, plus the Alterac Swiss for the Artisan Cooking quest.' },
 	F: { fish: [225, 300], cook: [225, 300] },
 };
 
@@ -168,6 +168,7 @@ const uniq = (a) => [...new Set(a)];
 // fish still needed for this band. Its count is cumulative from Cooking 1 (fishCount).
 function bandGoals(L, band, w, count) {
 	const r = R[w.recipe];
+	if (band.note) L.push(`  note ${band.note}`);
 	L.push(`  learn ${r.spell} nearest`);
 	L.push(`  skill Fishing ${band.fish[1]}`);
 	L.push(`  collect ${r.item} x${count} anywhere optional`); // optional: Polestar caches the count per skill level (Own.sectionDemand memo), so it can be stale until a skill-up or /reload
@@ -381,10 +382,20 @@ function render(faction) {
 	// ---- Expert
 	section(BANDS.D);
 	L.push('');
-	L.push('step Expert Fishing and Cooking');
-	L.push('  tip Both are books, not trainer ranks, and both lift the cap to 225. Expert Fishing - The Bass and You is sold only by Old Man Heming on the docks of Booty Bay; the Expert Cookbook has its own sellers and the arrow picks the nearest. Buy each and read it. Both need character level 20.');
+	// Two steps, each with its own 1g: one 2g goal would hold a player who bought one book and
+	// then reloaded. `when !knows` passes a player who already has the rank.
+	L.push('step Expert Fishing');
+	L.push('  when !knows 7732');
+	L.push('  tip Expert Fishing is a book, not a trainer rank, and lifts the cap to 225. Expert Fishing - The Bass and You is sold only by Old Man Heming on the docks of Booty Bay, for 1g. Buy it and read it. It needs character level 20.');
 	L.push('  level 20');
+	L.push('  money 1g');
 	L.push('  train Fishing Expert');
+	L.push('');
+	L.push('step Expert Cooking');
+	L.push('  when !knows 3413');
+	L.push('  tip The Expert Cookbook lifts Cooking to 225. It has its own sellers, 1g each; the arrow picks the nearest. Buy it and read it. It needs character level 20.');
+	L.push('  level 20');
+	L.push('  money 1g');
 	L.push('  train Cooking Expert');
 	L.push('  buy 6530 x5 nearest optional');
 	waterSteps('D');
@@ -439,6 +450,13 @@ function render(faction) {
 	L.push(`  turnin ${A.cook}`);
 	L.push('  accept 6610');
 	L.push('  turnin 6610');
+
+	L.push('');
+	L.push('step Spotted Yellowtail recipe');
+	L.push(`  when !knows ${R.yellowtail.spell}`);
+	L.push('  zone Tanaris');
+	L.push('  tip Gikkix sells the recipe on the Tanaris coast for 1g 60s.');
+	L.push('  money 1g60s');
 	L.push(`  learn ${R.yellowtail.spell} nearest`);
 
 	L.push('');
@@ -446,6 +464,13 @@ function render(faction) {
 	L.push('  zone Stranglethorn Vale');
 	L.push("  tip Take the boat from Ratchet to Booty Bay and fish the Savage Coast, the west shore of Stranglethorn, until a Savage Coast Blue Sailfin comes up. Buy Filet of Redgill from Kelsey Yance in Booty Bay: Redgill is the best fish for the last stretch to 300.");
 	L.push('  collect 16969 quest 6607.4');
+
+	L.push('');
+	L.push('step Filet of Redgill recipe');
+	L.push(`  when !knows ${R.redgill.spell}`);
+	L.push('  zone Stranglethorn Vale');
+	L.push('  tip Kelsey Yance sells the recipe in Booty Bay for 1g 60s.');
+	L.push('  money 1g60s');
 	L.push(`  learn ${R.redgill.spell} nearest`);
 
 	L.push('');
